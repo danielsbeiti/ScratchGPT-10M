@@ -6,7 +6,5 @@ __pycache__/
 
 # Project specific
 featured/loss/
-scratchgpt.py
 playground.ipynb
 weights/*.pthplayground.ipynb
-
