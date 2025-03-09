@@ -1,13 +1,17 @@
 # ScratchGPT
 
-I coded a custom implementation of a ~10.6 million parameter GPT model built from scratch for understanding transformer architecture fundamentals. This project creates a language model trained on text data that can generate, continuous text.
+I dived into and coded a custom implementation of a **~10.6 million parameter GPT model built from scratch** for understanding transformer architecture fundamentals. This project creates a language model trained on text data that can generate continuous text in the style of its training.
 
-This project was an amazing opportunity to understand, recode and master the architecture of a GPT Autoregressive architecture:
+With resource help, following the paper pioneering GPT architectures and the videos of 3Blue1Brown and Andrej Karpathy, this project was an amazing opportunity to understand, recode and master the architecture of a GPT Autoregressive architecture:
 - tokenization
 - embedding
 - multi-head self-attention mechanism
 - feed-forward neural networks
 - autoregressive generation
+
+
+The text generated still makes approximate sense, due mostly to the fact that it implements a character level tokenization.
+I am planning on recoding and implementing a sub-word level tokenization (by recoding the Byte Pair Encoding algorithm) into the model.
 
 
 
@@ -33,13 +37,15 @@ The model implements the core transformer architecture as described in "Attentio
 **Total Parameters: ~10.8 million**!
 
 Parameter calculation:
-- Token embedding: vocab_size × n_embd ≈ 106 × 384 ≈ 40 704
-- Position embedding: block_size × n_embd = 256 × 384 ≈ 98 304
-- Self Attention: 4 *(K,Q,V,O)* × n_layer × n_embd² ≈ 3 538 944
-- Feed Forward MLP: n_layer × (8 × n_embd × n_embd + 4 × n_embd) ≈ 7 087 104
-- Layer Norm: n_layer × 2 × n_embd ≈ 4 609
-- Output Layer: n_embd × vocab_size ≈ 40 704
+- **Token embedding**: vocab_size × n_embd ≈ 106 × 384 ≈ 40 704
+- **Position embedding**: block_size × n_embd = 256 × 384 ≈ 98 304
+- **Self Attention**: 4 *(K,Q,V,O)* × n_layer × n_embd² ≈ 3 538 944
+- **Feed Forward MLP**: n_layer × (8 × n_embd × n_embd + 4 × n_embd) ≈ 7 087 104
+- **Layer Norm**: n_layer × 2 × n_embd ≈ 4 609
+- **Output Layer**: n_embd × vocab_size ≈ 40 704
 
+
+<br>
 
 ## Training Performance
 
