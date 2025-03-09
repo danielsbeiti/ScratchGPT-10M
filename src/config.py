@@ -1,4 +1,5 @@
 import torch
+import os
 
 # Model hyperparameters
 batch_size = 64          # Number of batches to train on
@@ -15,10 +16,13 @@ dp = 0.2                 # Dropout rate
 # Generation hyperparameter
 max_new_tokens = 5000    # Number of tokens to generate - CHANGE AS YOU WISH
 
+# Get project root directory (parent directory of src)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Paths
-data_path = 'media/shakespeare.txt'
-weights_dir = 'weights/'
-outputs_dir = 'outputs/'
+data_path = os.path.join(PROJECT_ROOT, 'media', 'shakespeare.txt')
+weights_dir =os.path.join(PROJECT_ROOT, 'weights/')
+outputs_dir = os.path.join(PROJECT_ROOT, 'outputs/')
 
 # Device configuration
 device = 'cuda' if torch.cuda.is_available() else 'cpu'

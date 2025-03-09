@@ -95,29 +95,24 @@ And all thy wondless years
 
 ```
 ScratchGPT/
-│
-├── main.py              # Main script to run training/generation
-├── model.py             # Model architecture
-├── data.py              # Data loading and preprocessing
-├── trainer.py           # Training functions
-├── generate.py          # Text generation functions
-├── config.py            # Configuration parameters
-│
-├── weights/             # Directory for saved model weights
-│   └── weights.pth        # Trained model weights
-│
-├── outputs/             # Directory for generated text
-│   └── output.txt       # Generated text output
-│
-├── loss.csv             # Training loss history
-│
+├── src/
+│   ├── main.py
+│   ├── model.py
+│   ├── data.py
+│   ├── trainer.py
+│   ├── generate.py
+│   └── config.py
+├── weights/
+├── outputs/
+├── media/
+│   └── shakespeare.txt
 ├── featured/
-│   ├── architecture.png # Transformer architecture diagram
-│   ├── loss_plot.png    # Loss evolution graph
-│   └── training.png     # Training screenshot
-│
-└── media/
-    └── shakespeare.txt  # Training data
+│   ├── architecture.png
+│   ├── loss_plot.png
+│   └── training.png
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ### Training the Model
