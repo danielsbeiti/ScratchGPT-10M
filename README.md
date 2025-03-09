@@ -119,6 +119,7 @@ ScratchGPT/
 │   └── training.png
 ├── README.md
 ├── requirements.txt
+├── scratchgpt.py (one file code)
 └── .gitignore
 ```
 
