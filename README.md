@@ -1,6 +1,6 @@
 # ScratchGPT
 
-I dived into and coded a custom implementation of a **~10.6 million parameter GPT model built from scratch** for understanding transformer architecture fundamentals. This project creates a language model trained on text data that can generate continuous text in the style of its training.
+I dived into and coded a custom implementation of a **~10.8 million parameter GPT model built from scratch** for understanding transformer architecture fundamentals. This project creates a language model trained on text data that can generate continuous text in the style of its training.
 
 With resource help, following the paper pioneering GPT architectures and the videos of 3Blue1Brown and Andrej Karpathy, this project was an amazing opportunity to understand, recode and master the architecture of a GPT Autoregressive architecture:
 - tokenization
@@ -34,9 +34,8 @@ The model implements the core transformer architecture as described in "Attentio
 | **Attention Heads** | n_head | 6 | Each head is 64-dimensional (384/6) |
 | **Transformer Layers** | n_layer | 6 | Number of transformer blocks |
 
-**Total Parameters: ~10.8 million**!
 
-Parameter calculation:
+**Parameter calculation:**
 - **Token embedding**: vocab_size × n_embd ≈ 106 × 384 ≈ 40 704
 - **Position embedding**: block_size × n_embd = 256 × 384 ≈ 98 304
 - **Self Attention**: 4 *(K,Q,V,O)* × n_layer × n_embd² ≈ 3 538 944
@@ -44,6 +43,7 @@ Parameter calculation:
 - **Layer Norm**: n_layer × 2 × n_embd ≈ 4 609
 - **Output Layer**: n_embd × vocab_size ≈ 40 704
 
+**Total Parameters: ~10.8 million**!
 
 <br>
 
