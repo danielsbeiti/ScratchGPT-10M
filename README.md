@@ -21,23 +21,24 @@ The model implements the core transformer architecture as described in "Attentio
 
 ### Coded and Trained Model Parameters
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| Vocabulary Size | ~106 | Number of unique tokens |
-| Embedding Dimension | 384 | Size of token embeddings |
-| Context Length | 256 | Maximum sequence length |
-| Batch Size | 64 | Samples processed per iteration |
-| Attention Heads | 6 | Each head is 64-dimensional (384/6) |
-| Transformer Layers | 6 | Number of transformer blocks |
+| **Parameter** | **Name** | **Value** | **Description** |
+|-----------|-------|-------|-------------|
+| **Vocabulary Size**| vocab_size | ~106 | Number of unique tokens |
+| **Embedding Dimension** | n_embd | 384 | Size of token embeddings |
+| **Context Length** | block_size | 256 | Maximum sequence length |
+| **Batch Size** | batch_size | 64 | Samples processed per iteration |
+| **Attention Heads** | n_head | 6 | Each head is 64-dimensional (384/6) |
+| **Transformer Layers** | n_layer | 6 | Number of transformer blocks |
 
-**Total Parameters: ~10.6 million**
+**Total Parameters: ~10.8 million**!
 
 Parameter calculation:
-- Token embedding: vocab_size × n_embd ≈ 106 × 384
-- Position embedding: block_size × n_embd = 256 × 384
-- Each transformer block: 4 × n_embd² + 8 × n_embd² = 12 × n_embd²
-- Output projection: n_embd × vocab_size ≈ 384 × 106
-
+- Token embedding: vocab_size × n_embd ≈ 106 × 384 ≈ 40 704
+- Position embedding: block_size × n_embd = 256 × 384 ≈ 98 304
+- Self Attention: 4 *(K,Q,V,O)* × n_layer × n_embd² ≈ 3 538 944
+- Feed Forward MLP: n_layer × (8 × n_embd × n_embd + 4 × n_embd) ≈ 7 087 104
+- Layer Norm: n_layer × 2 × n_embd ≈ 4 609
+- Output Layer: n_embd × vocab_size ≈ 40 704
 
 
 ## Training Performance
