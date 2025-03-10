@@ -234,7 +234,7 @@ class BigramLM(nn.Module):
         ## Self attention blocks (4 heads + layer norm)
         self.blocks = nn.Sequential(*[Block(n_embd, n_head) for _ in range(n_layers)])
         ## Final layer norm
-        self.ln_f = nn.LayerNorm(n_embd)                                             ## layer norm to normalize the output
+        self.ln_f = nn.LayerNorm(n_embd)                                           ## layer norm to normalize the output
         ## Output layer, Linear layer to project the output to vocab size
         self.lm_head = nn.Linear(n_embd, vocab_size)
 
