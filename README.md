@@ -148,4 +148,4 @@ You can customize the model's behavior in the `config.py` file.
 
 ## Acknowledgements
 
-This project draws inspiration from the transformer architecture described in ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) and the GPT model series by OpenAI. Additional learning resources include Andrej Karpathy's video tutorials and 3Blue1Brown explanations.
+This project draws inspiration from Andrej Karpathy's video tutorials and 3Blue1Brown explanations, implementing the transformer architecture described in ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762).
