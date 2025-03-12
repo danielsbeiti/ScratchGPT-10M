@@ -172,12 +172,12 @@ class BigramLM(nn.Module):
 
 
 
-    def generate(self, idx, max_new_tokens, itos):
+    def generate(self, idx, max_new_tokens, vocab):
         """
         Generate new tokens given the input sequence
         param idx: Input of shape (B: batch_size, T:context_size)
         param max_new_tokens: Maximum number of tokens to generate
-        param itos: Inverse token to string mapping
+        param vocab: Vocabulary mapping for decoding
         return: Generated tokens of shape (B: batch_size, T:context_size + max_new_tokens)
         """
 

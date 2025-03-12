@@ -22,11 +22,16 @@ def main(train=False, weights_file="model.pth", output_file="output.txt"):
     # Ensure directories exist
     os.makedirs(config.weights_dir, exist_ok=True)
     os.makedirs(config.outputs_dir, exist_ok=True)
+    os.makedirs(config.merges_dir, exist_ok=True)
 
     # Prepare data
-    train_data, val_data, vocab_size, stoi, itos = prepare_data(config.data_path)
+    train_data, val_data, vocab_size, vocab, merges = prepare_data(config.data_path)
     print(f"Vocabulary size: {vocab_size}")
     
+    if train:
+        print(f"BPE merges will be saved in both JSON format (for loading) and TXT format (for visualization)")
+        print(f"  - JSON: {config.merges_path}")
+        print(f"  - TXT: {config.merges_path.replace('.json', '.txt')}\n\n")
 
     # Initialize model
     model = BigramLM(vocab_size).to(config.device)
@@ -45,7 +50,7 @@ def main(train=False, weights_file="model.pth", output_file="output.txt"):
 
     # Generate text
     print("Generating text...")
-    generated_text = generate_text(model, itos)
+    generated_text = generate_text(model, vocab)
     print("\nSample of generated text:")
     print(generated_text[:500] + "...\n")
     

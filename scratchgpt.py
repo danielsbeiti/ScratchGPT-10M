@@ -26,11 +26,13 @@ dp = 0.2                 # Dropout rate
 
 """ 10 680 576 parameters (cf GPT for formula calculous)"""
 
+num_merges = 2000
+vocab_size = 256 + num_merges
 
 
-TRAIN = False                               # Set to False to load the weights, set to True to train the model
-loading_weights = "weights_sp.pth"  # Path to upload or load the weights for model
-output_name = "output_sp4.txt"      # Path to upload the output file
+TRAIN = False                         # Set to False to load the weights, set to True to train the model
+loading_weights = "weights_poem.pth"  # Path to upload or load the weights for model
+output_name = "output_peom4.txt"      # Path to upload the output file
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(f'Using device: {device}\n')
@@ -45,14 +47,91 @@ Load the dataset
 with open('media/shakespeare.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 
-# Create a vocabulary
-chars = sorted(list(set(text)))
-vocab_size = len(chars)
+
+
+
+'''
+BPE attempt
+'''
+def get_stats(ids):
+    counts = {}
+    for pair in zip(ids, ids[1:]):
+       counts[pair] = counts.get(pair, 0) + 1
+    return counts
+
+def merge_pair(tokens, pair, idx):
+    """"
+    Merge the most frequent pair of tokens in the list.
+    Args:
+        tokens (list): List of tokens.
+        pair (tuple): Pair of tokens to merge.
+        idx (int): Index of the pair to merge.
+    Returns:
+        list: List of tokens with the pair merged.
+    """
+    new_tokens = []
+    i = 0
+    while i < len(tokens):
+        if i < len(tokens) - 1 and (tokens[i], tokens[i+1]) == pair:
+            new_tokens.append(idx)
+            i += 2
+        else:
+            new_tokens.append(tokens[i])
+            i += 1
+    return new_tokens
+
+def tokenize(text):
+    """
+    Tokenize the text into a list of tokens.
+    Args:
+        text (str): Text to tokenize.
+    Returns:
+        list: List of tokens.
+    """
+    return list(map(int, text.encode('utf-8')))
+
+
+def bpe_train(tokens, num_merges):
+    """
+    Apply BPE to the list of tokens.
+    Args:
+        tokens (list): List of tokens.
+        num_merges (int): Number of merges to apply.
+    Returns:
+        list: List of tokens after applying BPE.
+    """
+    merges = {}
+    idx = 256
+    for _ in range(num_merges):
+        stats = get_stats(tokens)
+        if not stats:
+            break
+        pair = max(stats, key=stats.get)
+        print(f'Merging pair: {pair} -> {idx}')
+        tokens = merge_pair(tokens, pair, idx)
+        idx = 256 + _
+        merges[pair] = idx
+    return tokens, merges
+
+
+# Tokenize the text
+tokens = tokenize(text)
+
+# Apply BPE
+print(f'Applying BPE with {num_merges} merges...')
+tokens, merges = bpe_train(tokens, 1000)
+
+# create a vocabulary
+vocab = {idx:bytes([idx]) for idx in range(256)}
+# Add the merges to the vocabulary
+for pair, idx in merges.items():
+    vocab[idx] = vocab[pair[0]] + vocab[pair[1]]
 
 
 # Encoder and decoder functions
 def encode(text):
-    tokens = list(text.encode('utf-8'))
+    tokens = tokenize(text)
+
     while len(tokens) > 1:
         stats = get_stats(tokens)
         pair = min(stats, key=lambda x: merges.get(x, float('inf')))
@@ -63,8 +142,28 @@ def encode(text):
     return tokens
 
 def decode(encoded_text):
-    return ''.join([itos[i] for i in encoded_text])
+    return b"".join([vocab[i] for i in encoded_text]).decode('utf-8', errors='replace')
 
+
+
+
+# '''
+# Encoding and decoding
+# '''
+# # Create a vocabulary
+# chars = sorted(list(set(text)))
+# vocab_size = len(chars)
+
+# # Create a mapping from characters to integers
+# stoi = {ch: i for i, ch in enumerate(chars)}
+# itos = {i: ch for i, ch in enumerate(chars)}
+
+# # Encoder and decoder functions
+# def encode(text):
+#     return [stoi[c] for c in text]
+
+# def decode(encoded_text):
+#     return ''.join([itos[i] for i in encoded_text])
 
 
 '''

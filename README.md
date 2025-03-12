@@ -1,9 +1,10 @@
 # ScratchGPT
 
+
 I dived into and coded a custom implementation of a **~10.8 million parameter GPT model built from scratch** for understanding transformer architecture fundamentals. This project creates a language model trained on text data that can generate continuous text in the style of its training.
 
 With resource help, following the paper pioneering GPT architectures and the videos of 3Blue1Brown and Andrej Karpathy, this project was an amazing opportunity to understand, recode and master the architecture of a GPT Autoregressive architecture:
-- tokenization
+- byte pair ecoding tokenization
 - embedding
 - multi-head self-attention mechanism
 - feed-forward neural networks
@@ -61,42 +62,29 @@ The model was trained on Ecole Polytechnique's SSH GPU infrastructure with impre
 
 ## Sample Generated Text
 
-The model generates Shakespeare-like text after training. Here's a brief sample:
+The model generates english poem texts after training. Here's a brief sample:
 
 ```
-VIRGILIA:
-And this is in Ruvers.
-
-VIRGILIA:
-Let him go with, or his desire, his grace these
-retire, in my mind give a son: which is for
-you known anoted his nature; and, is it is
-so make, people, amissive; and, good state
-with to complex them.
-
-MARIANA:
-And as he, Clarence, let him to endure his wills,
-Again one do never kiss
-Do wrong to curse. Take me him foundly; God's fall.
-
-GRUMIO:
-How sociation like to bear.
-
-SAMILLO:
-In that may great them delivers;
-The washest I think his grace backs, was death
-My patrived; the sung it of haven can it witness
-To part care them, and being clears the orpeasies
-Will these against the third activern to piece
-To common, true them on:
-Tellion him he our suffices himself him friends,
-And all thy wondless years
+Her voices a rowel peace and the call,
+Last the grief her man steet the mule’s between their fairls
+That stretched mepentimed, never painured—
+a when a firstead of the sea,
+The wailes of a neat stringers,
+The pend to the clase of graness and gone,
+A ftear bell chere, Revengerd,
+In peace out on the town the mountains.
+Oh, fare were the come to the soul, Weddy all on the wear the goes not woode
+The ves be toilve that past dring and made they all kissetated in proses
+And the ching mossy treet my song love again
+For heart he is the mountains of the love shounds fair
+And if ever we hand to man soul save the fine land me,
+That life only came as the bels of the Band
+And who made and his sorcome for the pain.
 ```
 
 
 
 ## Usage and running
-
 
 ### Repo Structure
 
@@ -104,15 +92,23 @@ And all thy wondless years
 ScratchGPT/
 ├── src/
 │   ├── main.py
+│   ├── config.py
 │   ├── model.py
 │   ├── data.py
 │   ├── trainer.py
 │   ├── generate.py
-│   └── config.py
-├── weights/
-├── outputs/
+│   └── bpe.py
 ├── media/
-│   └── shakespeare.txt
+│   ├── bible.txt
+│   ├── harrypotter.txt
+│   └── poem.txt
+├── merges/
+│   ├── merges.txt  (will generate)
+│   └── merges.json (will generate)
+├── weights/
+│   └── weights.pth (will generate)
+├── outputs/
+│   └── outputs.txt (will generate)
 ├── featured/
 │   ├── architecture.png
 │   ├── loss_plot.png

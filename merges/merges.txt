@@ -1,0 +1,2420 @@
+#version: 0.2
+#
+# merges
+#
+[e] + [ ] -> [e ] as 256
+[t] + [h] -> [th] as 257
+[d] + [ ] -> [d ] as 258
+[s] + [ ] -> [s ] as 259
+[i] + [n] -> [in] as 260
+[t] + [ ] -> [t ] as 261
+[a] + [n] -> [an] as 262
+[e] + [r] -> [er] as 263
+[th] + [e ] -> [the ] as 264
+[y] + [ ] -> [y ] as 265
+[o] + [u] -> [ou] as 266
+[,] + [ ] -> [, ] as 267
+[a] + [r] -> [ar] as 268
+[e] + [n] -> [en] as 269
+[o] + [r] -> [or] as 270
+[o] + [ ] -> [o ] as 271
+[l] + [l] -> [ll] as 272
+[o] + [n] -> [on] as 273
+[an] + [d ] -> [and ] as 274
+[in] + [g] -> [ing] as 275
+[ ] + [the ] -> [ the ] as 276
+[.] + [
+] -> [.
+] as 277
+[o] + [w] -> [ow] as 278
+[,] + [
+] -> [,
+] as 279
+[I] + [ ] -> [I ] as 280
+[r] + [e] -> [re] as 281
+[er] + [ ] -> [er ] as 282
+[f] + [ ] -> [f ] as 283
+[t] + [o ] -> [to ] as 284
+[a] + [ ] -> [a ] as 285
+[ll] + [ ] -> [ll ] as 286
+[s] + [t] -> [st] as 287
+[ing] + [ ] -> [ing ] as 288
+[y] + [ou] -> [you] as 289
+[e] + [d ] -> [ed ] as 290
+[s] + [h] -> [sh] as 291
+[n] + [d ] -> [nd ] as 292
+[g] + [h] -> [gh] as 293
+[o] + [m] -> [om] as 294
+[a] + [t ] -> [at ] as 295
+[o] + [f ] -> [of ] as 296
+[
+] + [A] -> [
+A] as 297
+[w] + [a] -> [wa] as 298
+[w] + [i] -> [wi] as 299
+[l] + [e] -> [le] as 300
+[l] + [i] -> [li] as 301
+[l] + [o] -> [lo] as 302
+[T] + [h] -> [Th] as 303
+[e] + [s ] -> [es ] as 304
+[in] + [ ] -> [in ] as 305
+[en] + [ ] -> [en ] as 306
+[i] + [s ] -> [is ] as 307
+[e] + [ar] -> [ear] as 308
+[r] + [i] -> [ri] as 309
+[v] + [e ] -> [ve ] as 310
+[or] + [ ] -> [or ] as 311
+[m] + [y ] -> [my ] as 312
+[r] + [ ] -> [r ] as 313
+[w] + [h] -> [wh] as 314
+[a] + [i] -> [ai] as 315
+[l] + [d ] -> [ld ] as 316
+[e] + [a] -> [ea] as 317
+[c] + [h] -> [ch] as 318
+[
+A] + [nd ] -> [
+And ] as 319
+[l] + [a] -> [la] as 320
+[m] + [e ] -> [me ] as 321
+[e] + [
+] -> [e
+] as 322
+[th] + [ ] -> [th ] as 323
+[r] + [a] -> [ra] as 324
+[e] + [s] -> [es] as 325
+[r] + [o] -> [ro] as 326
+[l] + [ ] -> [l ] as 327
+[e] + [e] -> [ee] as 328
+[t] + [i] -> [ti] as 329
+[th] + [e] -> [the] as 330
+[u] + [t ] -> [ut ] as 331
+[n] + [ ] -> [n ] as 332
+[s] + [e] -> [se] as 333
+[an] + [ ] -> [an ] as 334
+[s] + [t ] -> [st ] as 335
+[b] + [e] -> [be] as 336
+[k] + [ ] -> [k ] as 337
+[er] + [e ] -> [ere ] as 338
+[e] + [v] -> [ev] as 339
+[h] + [a] -> [ha] as 340
+[d] + [i] -> [di] as 341
+[on] + [ ] -> [on ] as 342
+[wa] + [s ] -> [was ] as 343
+[you] + [ ] -> [you ] as 344
+[th] + [at ] -> [that ] as 345
+[o] + [o] -> [oo] as 346
+[
+] + [Th] -> [
+Th] as 347
+[gh] + [t] -> [ght] as 348
+[m] + [ ] -> [m ] as 349
+[wi] + [th ] -> [with ] as 350
+[a] + [ll] -> [all] as 351
+[W] + [h] -> [Wh] as 352
+[l] + [e ] -> [le ] as 353
+[e] + [, ] -> [e, ] as 354
+[i] + [t] -> [it] as 355
+[a] + [y] -> [ay] as 356
+[a] + [ll ] -> [all ] as 357
+[ow] + [ ] -> [ow ] as 358
+[u] + [n] -> [un] as 359
+[s] + [i] -> [si] as 360
+[t] + [a] -> [ta] as 361
+[k] + [e ] -> [ke ] as 362
+[n] + [o] -> [no] as 363
+[u] + [r] -> [ur] as 364
+[l] + [y ] -> [ly ] as 365
+[h] + [e ] -> [he ] as 366
+[d] + [, ] -> [d, ] as 367
+[f] + [or ] -> [for ] as 368
+[c] + [e ] -> [ce ] as 369
+[h] + [ear] -> [hear] as 370
+[in] + [ the ] -> [in the ] as 371
+[you] + [r ] -> [your ] as 372
+[a] + [s ] -> [as ] as 373
+[ar] + [e ] -> [are ] as 374
+[g] + [ ] -> [g ] as 375
+[f] + [or] -> [for] as 376
+[an] + [d] -> [and] as 377
+[f] + [i] -> [fi] as 378
+[r] + [u] -> [ru] as 379
+[h] + [er ] -> [her ] as 380
+[s] + [, ] -> [s, ] as 381
+[gh] + [t ] -> [ght ] as 382
+[om] + [e ] -> [ome ] as 383
+[o] + [f] -> [of] as 384
+[m] + [a] -> [ma] as 385
+[
+] + [S] -> [
+S] as 386
+[i] + [t ] -> [it ] as 387
+[y] + [, ] -> [y, ] as 388
+[m] + [o] -> [mo] as 389
+[lo] + [ve ] -> [love ] as 390
+[re] + [a] -> [rea] as 391
+[no] + [t ] -> [not ] as 392
+[o] + [ld ] -> [old ] as 393
+[m] + [i] -> [mi] as 394
+[sh] + [e ] -> [she ] as 395
+[b] + [e ] -> [be ] as 396
+[th] + [er] -> [ther] as 397
+[ev] + [er ] -> [ever ] as 398
+[v] + [er] -> [ver] as 399
+[m] + [or] -> [mor] as 400
+[r] + [om] -> [rom] as 401
+[g] + [a] -> [ga] as 402
+[s] + [e ] -> [se ] as 403
+[e] + [.
+] -> [e.
+] as 404
+[�] + [�] -> [�] as 405
+[ou] + [ld ] -> [ould ] as 406
+[.] + [ ] -> [. ] as 407
+[B] + [ut ] -> [But ] as 408
+[on] + [e ] -> [one ] as 409
+[n] + [e] -> [ne] as 410
+[s] + [p] -> [sp] as 411
+[p] + [ ] -> [p ] as 412
+[t] + [t] -> [tt] as 413
+[A] + [nd ] -> [And ] as 414
+[a] + [l] -> [al] as 415
+[ou] + [n] -> [oun] as 416
+[d] + [s ] -> [ds ] as 417
+[s] + [w] -> [sw] as 418
+[e] + [l] -> [el] as 419
+[e] + [t ] -> [et ] as 420
+[d] + [
+] -> [d
+] as 421
+[lo] + [v] -> [lov] as 422
+[g] + [o] -> [go] as 423
+[ch] + [ ] -> [ch ] as 424
+[f] + [a] -> [fa] as 425
+[ow] + [n] -> [own] as 426
+[c] + [a] -> [ca] as 427
+[s] + [
+] -> [s
+] as 428
+[f] + [rom] -> [from] as 429
+[en] + [t] -> [ent] as 430
+[c] + [k] -> [ck] as 431
+[b] + [y ] -> [by ] as 432
+[wi] + [ll ] -> [will ] as 433
+[s] + [a] -> [sa] as 434
+[th] + [er ] -> [ther ] as 435
+[ou] + [gh] -> [ough] as 436
+[and ] + [the ] -> [and the ] as 437
+[to ] + [the ] -> [to the ] as 438
+[d] + [e] -> [de] as 439
+[b] + [o] -> [bo] as 440
+[of] + [ the ] -> [of the ] as 441
+[s ] + [of ] -> [s of ] as 442
+[n] + [i] -> [ni] as 443
+[i] + [r] -> [ir] as 444
+[
+] + [Wh] -> [
+Wh] as 445
+[ow] + [n ] -> [own ] as 446
+[t] + [s ] -> [ts ] as 447
+[s] + [s] -> [ss] as 448
+[Th] + [e ] -> [The ] as 449
+[p] + [p] -> [pp] as 450
+[p] + [a] -> [pa] as 451
+[c] + [k ] -> [ck ] as 452
+[s] + [u] -> [su] as 453
+[b] + [ut ] -> [but ] as 454
+[h] + [i] -> [hi] as 455
+[ou] + [ ] -> [ou ] as 456
+[w] + [or] -> [wor] as 457
+[e] + [,
+] -> [e,
+] as 458
+[the] + [y ] -> [they ] as 459
+[d] + [o] -> [do] as 460
+[o] + [l] -> [ol] as 461
+[
+] + [T] -> [
+T] as 462
+[
+] + [O] -> [
+O] as 463
+[s] + [ai] -> [sai] as 464
+[ou] + [t ] -> [out ] as 465
+[er] + [s ] -> [ers ] as 466
+[n] + [o ] -> [no ] as 467
+[e] + [y] -> [ey] as 468
+[I] + [ll ] -> [Ill ] as 469
+[d] + [e ] -> [de ] as 470
+[d] + [a] -> [da] as 471
+[a] + [wa] -> [awa] as 472
+[h] + [is ] -> [his ] as 473
+[k] + [n] -> [kn] as 474
+[ou] + [r ] -> [our ] as 475
+[F] + [or ] -> [For ] as 476
+[en] + [t ] -> [ent ] as 477
+[g] + [re] -> [gre] as 478
+[s] + [s ] -> [ss ] as 479
+[f] + [u] -> [fu] as 480
+[c] + [an ] -> [can ] as 481
+[from] + [ ] -> [from ] as 482
+[b] + [l] -> [bl] as 483
+[d] + [ay] -> [day] as 484
+[W] + [i] -> [Wi] as 485
+[y] + [,
+] -> [y,
+] as 486
+[e] + [y ] -> [ey ] as 487
+[y] + [.
+] -> [y.
+] as 488
+[s] + [o ] -> [so ] as 489
+[t] + [o] -> [to] as 490
+[
+Th] + [e ] -> [
+The ] as 491
+[sw] + [ee] -> [swee] as 492
+[e] + [d] -> [ed] as 493
+[wh] + [en ] -> [when ] as 494
+[w] + [e ] -> [we ] as 495
+[w] + [ ] -> [w ] as 496
+[le] + [a] -> [lea] as 497
+[on] + [ the ] -> [on the ] as 498
+[i] + [l] -> [il] as 499
+[m] + [e
+] -> [me
+] as 500
+[ou] + [r] -> [our] as 501
+[w] + [ere ] -> [were ] as 502
+[ou] + [nd ] -> [ound ] as 503
+[f] + [ai] -> [fai] as 504
+[b] + [a] -> [ba] as 505
+[e] + [ll] -> [ell] as 506
+[t] + [, ] -> [t, ] as 507
+[
+] + [I ] -> [
+I ] as 508
+[l] + [ow] -> [low] as 509
+[the] + [i] -> [thei] as 510
+[n] + [ever ] -> [never ] as 511
+[thei] + [r ] -> [their ] as 512
+[m] + [e] -> [me] as 513
+[i] + [f ] -> [if ] as 514
+[r] + [ow] -> [row] as 515
+[q] + [u] -> [qu] as 516
+[on] + [g] -> [ong] as 517
+[t] + [ru] -> [tru] as 518
+[sh] + [ ] -> [sh ] as 519
+[p] + [i] -> [pi] as 520
+[c] + [i] -> [ci] as 521
+[d] + [ea] -> [dea] as 522
+[you] + [n] -> [youn] as 523
+[li] + [ke ] -> [like ] as 524
+[c] + [om] -> [com] as 525
+[th] + [is ] -> [this ] as 526
+[lo] + [o] -> [loo] as 527
+[b] + [ri] -> [bri] as 528
+[ear] + [ ] -> [ear ] as 529
+[s] + [k] -> [sk] as 530
+[t] + [er] -> [ter] as 531
+[�] + [�] -> [’] as 532
+[
+] + [I] -> [
+I] as 533
+[I ] + [was ] -> [I was ] as 534
+[h] + [ ] -> [h ] as 535
+[w] + [in] -> [win] as 536
+[es] + [t ] -> [est ] as 537
+[youn] + [g ] -> [young ] as 538
+[s ] + [and ] -> [s and ] as 539
+[e] + [ll ] -> [ell ] as 540
+[wh] + [i] -> [whi] as 541
+[r] + [y ] -> [ry ] as 542
+[c] + [o] -> [co] as 543
+[v] + [i] -> [vi] as 544
+[ur] + [e ] -> [ure ] as 545
+[p] + [la] -> [pla] as 546
+[hear] + [t ] -> [heart ] as 547
+[n] + [ing ] -> [ning ] as 548
+[M] + [y ] -> [My ] as 549
+[.
+] + [I] -> [.
+I] as 550
+[d] + [d] -> [dd] as 551
+[u] + [st ] -> [ust ] as 552
+[di] + [d ] -> [did ] as 553
+[an] + [t ] -> [ant ] as 554
+[ha] + [ve ] -> [have ] as 555
+[m] + [b] -> [mb] as 556
+[on] + [g ] -> [ong ] as 557
+[m] + [an] -> [man] as 558
+[.
+] + [O] -> [.
+O] as 559
+[ing] + [, ] -> [ing, ] as 560
+[a] + [ga] -> [aga] as 561
+[c] + [ome ] -> [come ] as 562
+[g] + [e ] -> [ge ] as 563
+[R] + [o] -> [Ro] as 564
+[en] + [, ] -> [en, ] as 565
+[h] + [ea] -> [hea] as 566
+[s] + [o] -> [so] as 567
+[p] + [re] -> [pre] as 568
+[m] + [in] -> [min] as 569
+[ti] + [on] -> [tion] as 570
+[f] + [in] -> [fin] as 571
+[st] + [i] -> [sti] as 572
+[b] + [ea] -> [bea] as 573
+[,
+] + [S] -> [,
+S] as 574
+[ar] + [m] -> [arm] as 575
+[oo] + [d ] -> [ood ] as 576
+[f] + [f] -> [ff] as 577
+[i] + [g] -> [ig] as 578
+[r] + [ing] -> [ring] as 579
+[ro] + [a] -> [roa] as 580
+[wh] + [ere ] -> [where ] as 581
+[li] + [ght] -> [light] as 582
+[the] + [m ] -> [them ] as 583
+[fu] + [l ] -> [ful ] as 584
+[n] + [ the ] -> [n the ] as 585
+[,
+] + [And ] -> [,
+And ] as 586
+[I ] + [w] -> [I w] as 587
+[ha] + [d ] -> [had ] as 588
+[er] + [, ] -> [er, ] as 589
+[y] + [
+] -> [y
+] as 590
+[ough] + [ ] -> [ough ] as 591
+[o] + [p] -> [op] as 592
+[m] + [ar] -> [mar] as 593
+[Wi] + [th ] -> [With ] as 594
+[ar] + [ ] -> [ar ] as 595
+[g] + [u] -> [gu] as 596
+[g] + [r] -> [gr] as 597
+[a] + [t] -> [at] as 598
+[d ] + [and ] -> [d and ] as 599
+[p] + [o] -> [po] as 600
+[awa] + [y ] -> [away ] as 601
+[it] + [s ] -> [its ] as 602
+[en] + [d] -> [end] as 603
+[
+And ] + [the ] -> [
+And the ] as 604
+[ta] + [in] -> [tain] as 605
+[s] + [,
+] -> [s,
+] as 606
+[c] + [e] -> [ce] as 607
+[wh] + [at ] -> [what ] as 608
+[aga] + [in] -> [again] as 609
+[y] + [s ] -> [ys ] as 610
+[g] + [ir] -> [gir] as 611
+[.
+] + [S] -> [.
+S] as 612
+[a] + [b] -> [ab] as 613
+[e] + [t] -> [et] as 614
+[n] + [ow ] -> [now ] as 615
+[ta] + [ke ] -> [take ] as 616
+[g] + [o ] -> [go ] as 617
+[fi] + [r] -> [fir] as 618
+[th] + [ou ] -> [thou ] as 619
+[ing] + [
+] -> [ing
+] as 620
+[e] + [d, ] -> [ed, ] as 621
+[b] + [u] -> [bu] as 622
+[�] + [�] -> [—] as 623
+[all] + [ the ] -> [all the ] as 624
+[on] + [e] -> [one] as 625
+[f] + [ri] -> [fri] as 626
+[ni] + [ght] -> [night] as 627
+[it] + [e ] -> [ite ] as 628
+[t] + [oo] -> [too] as 629
+[
+T] + [o ] -> [
+To ] as 630
+[swee] + [t ] -> [sweet ] as 631
+[d] + [er] -> [der] as 632
+[an] + [g] -> [ang] as 633
+[a] + [g] -> [ag] as 634
+[t] + [ur] -> [tur] as 635
+[;] + [
+] -> [;
+] as 636
+[in] + [k ] -> [ink ] as 637
+[h] + [and] -> [hand] as 638
+[.
+] + [I ] -> [.
+I ] as 639
+[m] + [ai] -> [mai] as 640
+[!] + [ ] -> [! ] as 641
+[s] + [ay] -> [say] as 642
+[Wh] + [en ] -> [When ] as 643
+[n] + [ow] -> [now] as 644
+[ai] + [r] -> [air] as 645
+[wi] + [th] -> [with] as 646
+[ed ] + [the ] -> [ed the ] as 647
+[.
+] + [And ] -> [.
+And ] as 648
+[en] + [ the ] -> [en the ] as 649
+[h] + [er] -> [her] as 650
+[c] + [on] -> [con] as 651
+[t] + [y ] -> [ty ] as 652
+[a] + [m] -> [am] as 653
+[
+] + [But ] -> [
+But ] as 654
+[l] + [y] -> [ly] as 655
+[in] + [k] -> [ink] as 656
+[d] + [r] -> [dr] as 657
+[kn] + [ow] -> [know] as 658
+[tt] + [le ] -> [ttle ] as 659
+[oun] + [tain] -> [ountain] as 660
+[s] + [mi] -> [smi] as 661
+[.
+] + [The ] -> [.
+The ] as 662
+[u] + [p ] -> [up ] as 663
+[ed ] + [to ] -> [ed to ] as 664
+[t] + [ra] -> [tra] as 665
+[li] + [f] -> [lif] as 666
+[d] + [ar] -> [dar] as 667
+[om] + [e] -> [ome] as 668
+[T] + [o ] -> [To ] as 669
+[a] + [l ] -> [al ] as 670
+[s] + [ou] -> [sou] as 671
+[es] + [, ] -> [es, ] as 672
+[an] + [c] -> [anc] as 673
+[th] + [ere ] -> [there ] as 674
+[g] + [i] -> [gi] as 675
+[d] + [own ] -> [down ] as 676
+[for] + [ the ] -> [for the ] as 677
+[t] + [ing ] -> [ting ] as 678
+[c] + [ar] -> [car] as 679
+[s ] + [the ] -> [s the ] as 680
+[in ] + [a ] -> [in a ] as 681
+[v] + [er ] -> [ver ] as 682
+[l] + [d] -> [ld] as 683
+[f] + [re] -> [fre] as 684
+[c] + [l] -> [cl] as 685
+[c] + [ould ] -> [could ] as 686
+[m] + [an ] -> [man ] as 687
+[s ] + [to ] -> [s to ] as 688
+[t] + [e ] -> [te ] as 689
+[u] + [ght] -> [ught] as 690
+[er] + [ the ] -> [er the ] as 691
+[se] + [e ] -> [see ] as 692
+[
+A] + [ ] -> [
+A ] as 693
+[d] + [rea] -> [drea] as 694
+[at ] + [the ] -> [at the ] as 695
+[sh] + [all ] -> [shall ] as 696
+[m] + [p] -> [mp] as 697
+[
+] + [For ] -> [
+For ] as 698
+[p] + [ri] -> [pri] as 699
+[li] + [ttle ] -> [little ] as 700
+[f] + [t ] -> [ft ] as 701
+[.
+] + [Th] -> [.
+Th] as 702
+[wh] + [o ] -> [who ] as 703
+[m] + [er] -> [mer] as 704
+[by ] + [the ] -> [by the ] as 705
+[u] + [s] -> [us] as 706
+[gre] + [en ] -> [green ] as 707
+[li] + [ght ] -> [light ] as 708
+[
+] + [F] -> [
+F] as 709
+[
+] + [H] -> [
+H] as 710
+[
+] + [B] -> [
+B] as 711
+[p] + [r] -> [pr] as 712
+[w] + [ould ] -> [would ] as 713
+[f] + [ee] -> [fee] as 714
+[e] + [p] -> [ep] as 715
+[fir] + [st ] -> [first ] as 716
+[th] + [y ] -> [thy ] as 717
+[r] + [e ] -> [re ] as 718
+[b] + [ar] -> [bar] as 719
+[o] + [ver] -> [over] as 720
+[w] + [ar] -> [war] as 721
+[and ] + [I ] -> [and I ] as 722
+[M] + [ar] -> [Mar] as 723
+[f] + [low] -> [flow] as 724
+[e] + [d
+] -> [ed
+] as 725
+[sai] + [d ] -> [said ] as 726
+[,
+] + [A] -> [,
+A] as 727
+[u] + [p] -> [up] as 728
+[g] + [ra] -> [gra] as 729
+[wi] + [ld ] -> [wild ] as 730
+[sh] + [a] -> [sha] as 731
+[th] + [r] -> [thr] as 732
+[ti] + [me ] -> [time ] as 733
+[om] + [ ] -> [om ] as 734
+[c] + [an] -> [can] as 735
+[b] + [rea] -> [brea] as 736
+[s] + [ea] -> [sea] as 737
+[,
+] + [I] -> [,
+I] as 738
+[g] + [ood ] -> [good ] as 739
+[le] + [ss ] -> [less ] as 740
+[j] + [o] -> [jo] as 741
+[d] + [
+And ] -> [d
+And ] as 742
+[h] + [, ] -> [h, ] as 743
+[t] + [own] -> [town] as 744
+[bea] + [u] -> [beau] as 745
+[gh] + [ ] -> [gh ] as 746
+[tru] + [e ] -> [true ] as 747
+[my ] + [love ] -> [my love ] as 748
+[st] + [ar] -> [star] as 749
+[t] + [re] -> [tre] as 750
+[e] + [x] -> [ex] as 751
+[p] + [ar] -> [par] as 752
+[v] + [ing ] -> [ving ] as 753
+[kn] + [ow ] -> [know ] as 754
+[t] + [w] -> [tw] as 755
+[v] + [es ] -> [ves ] as 756
+[d] + [own] -> [down] as 757
+[c] + [ro] -> [cro] as 758
+[e] + [
+And ] -> [e
+And ] as 759
+[;] + [ ] -> [; ] as 760
+[be] + [g] -> [beg] as 761
+[d] + [u] -> [du] as 762
+[
+] + [W] -> [
+W] as 763
+[e
+] + [O] -> [e
+O] as 764
+[k] + [s ] -> [ks ] as 765
+[l] + [and] -> [land] as 766
+[ing] + [,
+] -> [ing,
+] as 767
+[k] + [ing ] -> [king ] as 768
+[gir] + [l] -> [girl] as 769
+[g] + [et ] -> [get ] as 770
+[ss] + [ed ] -> [ssed ] as 771
+[l] + [ed ] -> [led ] as 772
+[l] + [ong ] -> [long ] as 773
+[l] + [and ] -> [land ] as 774
+[ha] + [s ] -> [has ] as 775
+[l] + [ing ] -> [ling ] as 776
+[t] + [ed ] -> [ted ] as 777
+[wa] + [t] -> [wat] as 778
+[wor] + [ld ] -> [world ] as 779
+[c] + [r] -> [cr] as 780
+[s] + [on] -> [son] as 781
+[to ] + [be ] -> [to be ] as 782
+[a ] + [b] -> [a b] as 783
+[s] + [ee] -> [see] as 784
+[e] + [ly ] -> [ely ] as 785
+[is ] + [the ] -> [is the ] as 786
+[ca] + [me ] -> [came ] as 787
+[s] + [ome ] -> [some ] as 788
+[I ] + [love ] -> [I love ] as 789
+[s] + [.
+] -> [s.
+] as 790
+[M] + [a] -> [Ma] as 791
+[a] + [s] -> [as] as 792
+[s] + [ing] -> [sing] as 793
+[ar] + [d] -> [ard] as 794
+[ev] + [er] -> [ever] as 795
+[m] + [u] -> [mu] as 796
+[ma] + [ke ] -> [make ] as 797
+[b] + [ra] -> [bra] as 798
+[st] + [re] -> [stre] as 799
+[C] + [a] -> [Ca] as 800
+[i] + [ll] -> [ill] as 801
+[k] + [es ] -> [kes ] as 802
+[bl] + [in] -> [blin] as 803
+[o] + [i] -> [oi] as 804
+[ni] + [ght ] -> [night ] as 805
+[h] + [u] -> [hu] as 806
+[mor] + [e ] -> [more ] as 807
+[fai] + [r] -> [fair] as 808
+[b] + [la] -> [bla] as 809
+[m] + [ountain] -> [mountain] as 810
+[ee] + [p] -> [eep] as 811
+[D] + [u] -> [Du] as 812
+[in] + [to ] -> [into ] as 813
+[ough] + [ the ] -> [ough the ] as 814
+[sh] + [in] -> [shin] as 815
+[if ] + [you ] -> [if you ] as 816
+[le] + [ft ] -> [left ] as 817
+[n] + [y ] -> [ny ] as 818
+[C] + [or] -> [Cor] as 819
+[, ] + [I ] -> [, I ] as 820
+[and ] + [s] -> [and s] as 821
+[a ] + [f] -> [a f] as 822
+[
+S] + [he ] -> [
+She ] as 823
+[es ] + [and ] -> [es and ] as 824
+[h] + [ow ] -> [how ] as 825
+[,
+] + [Th] -> [,
+Th] as 826
+[
+Th] + [at ] -> [
+That ] as 827
+[
+] + [N] -> [
+N] as 828
+[l] + [ong] -> [long] as 829
+[you] + [, ] -> [you, ] as 830
+[sh] + [ould ] -> [should ] as 831
+[th] + [an ] -> [than ] as 832
+[mor] + [ning ] -> [morning ] as 833
+[m] + [en ] -> [men ] as 834
+[
+A] + [ll ] -> [
+All ] as 835
+[h] + [e] -> [he] as 836
+[th] + [ou] -> [thou] as 837
+[, ] + [and ] -> [, and ] as 838
+[hea] + [v] -> [heav] as 839
+[sh] + [i] -> [shi] as 840
+[in ] + [my ] -> [in my ] as 841
+[L] + [i] -> [Li] as 842
+[from] + [ the ] -> [from the ] as 843
+[M] + [o] -> [Mo] as 844
+[m] + [e, ] -> [me, ] as 845
+[e
+] + [S] -> [e
+S] as 846
+[the] + [e ] -> [thee ] as 847
+[hear] + [ ] -> [hear ] as 848
+[o] + [h] -> [oh] as 849
+[bri] + [d] -> [brid] as 850
+[er] + [es ] -> [eres ] as 851
+[da] + [y ] -> [day ] as 852
+[Ro] + [s] -> [Ros] as 853
+[se] + [l] -> [sel] as 854
+[es] + [,
+] -> [es,
+] as 855
+[si] + [l] -> [sil] as 856
+[en] + [c] -> [enc] as 857
+[st] + [or] -> [stor] as 858
+[li] + [v] -> [liv] as 859
+[is ] + [a ] -> [is a ] as 860
+[.
+] + [A] -> [.
+A] as 861
+[t] + [u] -> [tu] as 862
+[b] + [ir] -> [bir] as 863
+[on] + [ce ] -> [once ] as 864
+[’] + [s ] -> [’s ] as 865
+[th] + [ing ] -> [thing ] as 866
+[c] + [ ] -> [c ] as 867
+[b] + [r] -> [br] as 868
+[c] + [lo] -> [clo] as 869
+[
+Wh] + [en ] -> [
+When ] as 870
+[G] + [o] -> [Go] as 871
+[s] + [un] -> [sun] as 872
+[m] + [on] -> [mon] as 873
+[an] + [ce ] -> [ance ] as 874
+[, ] + [the ] -> [, the ] as 875
+[y] + [ear] -> [year] as 876
+[l] + [u] -> [lu] as 877
+[Y] + [ou ] -> [You ] as 878
+[m] + [ust ] -> [must ] as 879
+[e] + [w] -> [ew] as 880
+[pi] + [p] -> [pip] as 881
+[k] + [en] -> [ken] as 882
+[ey] + [es ] -> [eyes ] as 883
+[st] + [e] -> [ste] as 884
+[y] + [e ] -> [ye ] as 885
+[ai] + [r ] -> [air ] as 886
+[g] + [ri] -> [gri] as 887
+[d ] + [the ] -> [d the ] as 888
+[hear] + [t] -> [heart] as 889
+[n] + [a] -> [na] as 890
+[c] + [oun] -> [coun] as 891
+[too] + [k ] -> [took ] as 892
+[st] + [r] -> [str] as 893
+[fai] + [r ] -> [fair ] as 894
+[es ] + [to ] -> [es to ] as 895
+[the ] + [d] -> [the d] as 896
+[b] + [an] -> [ban] as 897
+[p] + [ut ] -> [put ] as 898
+[s] + [le] -> [sle] as 899
+[o] + [er the ] -> [oer the ] as 900
+[on] + [t ] -> [ont ] as 901
+[J] + [oh] -> [Joh] as 902
+[my ] + [heart ] -> [my heart ] as 903
+[B] + [all] -> [Ball] as 904
+[Ros] + [in the ] -> [Rosin the ] as 905
+[Rosin the ] + [B] -> [Rosin the B] as 906
+[Rosin the B] + [ow] -> [Rosin the Bow] as 907
+[d] + [ow] -> [dow] as 908
+[f] + [o] -> [fo] as 909
+[with ] + [a ] -> [with a ] as 910
+[a] + [d] -> [ad] as 911
+[g] + [e] -> [ge] as 912
+[p] + [or] -> [por] as 913
+[d] + [o ] -> [do ] as 914
+[b] + [on] -> [bon] as 915
+[b] + [i] -> [bi] as 916
+[le] + [, ] -> [le, ] as 917
+[g] + [la] -> [gla] as 918
+[d] + [y ] -> [dy ] as 919
+[.
+] + [N] -> [.
+N] as 920
+[r] + [ow ] -> [row ] as 921
+[c] + [or] -> [cor] as 922
+[b] + [or] -> [bor] as 923
+[,
+] + [C] -> [,
+C] as 924
+[ou] + [s ] -> [ous ] as 925
+[ro] + [s] -> [ros] as 926
+[ti] + [m] -> [tim] as 927
+[en] + [d ] -> [end ] as 928
+[ha] + [pp] -> [happ] as 929
+[t] + [ear] -> [tear] as 930
+[ant ] + [to ] -> [ant to ] as 931
+[beau] + [ti] -> [beauti] as 932
+[beauti] + [ful ] -> [beautiful ] as 933
+[w] + [om] -> [wom] as 934
+[ther] + [s ] -> [thers ] as 935
+[f] + [oo] -> [foo] as 936
+[t] + [e] -> [te] as 937
+[m] + [ee] -> [mee] as 938
+[ga] + [ve ] -> [gave ] as 939
+[I] + [ri] -> [Iri] as 940
+[l] + [, ] -> [l, ] as 941
+[a] + [ts ] -> [ats ] as 942
+[ll] + [ the ] -> [ll the ] as 943
+[Joh] + [n] -> [John] as 944
+[roa] + [d ] -> [road ] as 945
+[I] + [m ] -> [Im ] as 946
+[M] + [c] -> [Mc] as 947
+[�] + [�] -> [Ã] as 948
+[Ã] + [�] -> [Ã�] as 949
+[k] + [ed ] -> [ked ] as 950
+[es] + [
+] -> [es
+] as 951
+[o] + [ther ] -> [other ] as 952
+[v] + [a] -> [va] as 953
+['] + [s ] -> ['s ] as 954
+[h] + [in] -> [hin] as 955
+[ch] + [il] -> [chil] as 956
+[c] + [le] -> [cle] as 957
+[t] + [ri] -> [tri] as 958
+[ne] + [w ] -> [new ] as 959
+[.
+] + [T] -> [.
+T] as 960
+[with] + [ the ] -> [with the ] as 961
+[d] + [es] -> [des] as 962
+[ti] + [on ] -> [tion ] as 963
+[b] + [lo] -> [blo] as 964
+[oo] + [d] -> [ood] as 965
+[mo] + [ther ] -> [mother ] as 966
+[s ] + [are ] -> [s are ] as 967
+[ing ] + [to ] -> [ing to ] as 968
+[
+] + [D] -> [
+D] as 969
+[ed ] + [in ] -> [ed in ] as 970
+[ch] + [a] -> [cha] as 971
+[Wh] + [ere ] -> [Where ] as 972
+[su] + [m] -> [sum] as 973
+[le] + [t ] -> [let ] as 974
+[p] + [er] -> [per] as 975
+[mi] + [ght ] -> [might ] as 976
+[a] + [m ] -> [am ] as 977
+[drea] + [m] -> [dream] as 978
+[ing] + [ the ] -> [ing the ] as 979
+[s] + [ci] -> [sci] as 980
+[b] + [ro] -> [bro] as 981
+[e] + [l ] -> [el ] as 982
+[
+Wh] + [at ] -> [
+What ] as 983
+[n] + [t ] -> [nt ] as 984
+[er] + [e] -> [ere] as 985
+[st] + [and] -> [stand] as 986
+[c] + [all] -> [call] as 987
+[n] + [e ] -> [ne ] as 988
+[i] + [ll ] -> [ill ] as 989
+[hi] + [m ] -> [him ] as 990
+[re] + [d ] -> [red ] as 991
+[
+] + [L] -> [
+L] as 992
+[I w] + [ant to ] -> [I want to ] as 993
+[d] + [anc] -> [danc] as 994
+[mo] + [on ] -> [moon ] as 995
+[t] + [un] -> [tun] as 996
+[ba] + [ck ] -> [back ] as 997
+[h] + [es ] -> [hes ] as 998
+[w] + [ell ] -> [well ] as 999
+[h] + [ome ] -> [home ] as 1000
+[e
+] + [The ] -> [e
+The ] as 1001
+[whi] + [ch ] -> [which ] as 1002
+[a ] + [p] -> [a p] as 1003
+[c] + [ou] -> [cou] as 1004
+[qu] + [i] -> [qui] as 1005
+[be] + [ll] -> [bell] as 1006
+[o] + [le ] -> [ole ] as 1007
+[lif] + [e ] -> [life ] as 1008
+[f] + [la] -> [fla] as 1009
+[p] + [e] -> [pe] as 1010
+[.
+] + [H] -> [.
+H] as 1011
+[d] + [es ] -> [des ] as 1012
+[th] + [, ] -> [th, ] as 1013
+[st] + [a] -> [sta] as 1014
+[fri] + [en] -> [frien] as 1015
+[r] + [ound ] -> [round ] as 1016
+[an] + [s ] -> [ans ] as 1017
+[ea] + [ch ] -> [each ] as 1018
+[dea] + [d ] -> [dead ] as 1019
+[wh] + [ite ] -> [white ] as 1020
+[it ] + [is ] -> [it is ] as 1021
+[e
+] + [I] -> [e
+I] as 1022
+[again] + [st ] -> [against ] as 1023
+[sh] + [ed ] -> [shed ] as 1024
+[ma] + [de ] -> [made ] as 1025
+[fin] + [d ] -> [find ] as 1026
+[v] + [oi] -> [voi] as 1027
+[li] + [ve ] -> [live ] as 1028
+[p] + [an] -> [pan] as 1029
+[t] + [r] -> [tr] as 1030
+[g] + [ar] -> [gar] as 1031
+[ve ] + [the ] -> [ve the ] as 1032
+[g] + [g] -> [gg] as 1033
+[oun] + [d] -> [ound] as 1034
+[wa] + [y ] -> [way ] as 1035
+[swee] + [t] -> [sweet] as 1036
+[or] + [ the ] -> [or the ] as 1037
+[?] + [ ] -> [? ] as 1038
+[s] + [en] -> [sen] as 1039
+[e
+] + [Th] -> [e
+Th] as 1040
+[mor] + [n] -> [morn] as 1041
+[Wi] + [ll ] -> [Will ] as 1042
+[
+A] + [s ] -> [
+As ] as 1043
+[n] + [or] -> [nor] as 1044
+[wh] + [ee] -> [whee] as 1045
+[,
+] + [O] -> [,
+O] as 1046
+[hi] + [gh ] -> [high ] as 1047
+[thr] + [ough the ] -> [through the ] as 1048
+[ver] + [y ] -> [very ] as 1049
+[pa] + [ssed ] -> [passed ] as 1050
+[fa] + [ther ] -> [father ] as 1051
+[do] + [es] -> [does] as 1052
+[mo] + [on] -> [moon] as 1053
+[pre] + [tt] -> [prett] as 1054
+[th] + [en ] -> [then ] as 1055
+[of ] + [my ] -> [of my ] as 1056
+[ne] + [er ] -> [neer ] as 1057
+[e
+] + [But ] -> [e
+But ] as 1058
+[-] + [ra] -> [-ra] as 1059
+[ent] + [y ] -> [enty ] as 1060
+[m] + [e.
+] -> [me.
+] as 1061
+[c] + [our] -> [cour] as 1062
+[
+] + [My ] -> [
+My ] as 1063
+[to] + [day] -> [today] as 1064
+[fin] + [e ] -> [fine ] as 1065
+[d] + [ear] -> [dear] as 1066
+[T] + [o] -> [To] as 1067
+[sp] + [i] -> [spi] as 1068
+[f] + [le] -> [fle] as 1069
+[v] + [all] -> [vall] as 1070
+[lov] + [ed ] -> [loved ] as 1071
+[be] + [hin] -> [behin] as 1072
+[g] + [row] -> [grow] as 1073
+[e] + [en ] -> [een ] as 1074
+[st] + [ru] -> [stru] as 1075
+[fi] + [el] -> [fiel] as 1076
+[e] + [st] -> [est] as 1077
+[f] + [e] -> [fe] as 1078
+[tur] + [n] -> [turn] as 1079
+[n] + [or ] -> [nor ] as 1080
+[t ] + [was ] -> [t was ] as 1081
+[p] + [l] -> [pl] as 1082
+[go] + [t ] -> [got ] as 1083
+[ro] + [ck] -> [rock] as 1084
+[c] + [ra] -> [cra] as 1085
+[un] + [der] -> [under] as 1086
+[sou] + [l ] -> [soul ] as 1087
+[to] + [o ] -> [too ] as 1088
+[on] + [ly ] -> [only ] as 1089
+[ing ] + [and ] -> [ing and ] as 1090
+[
+] + [C] -> [
+C] as 1091
+[and ] + [t] -> [and t] as 1092
+[lov] + [ely ] -> [lovely ] as 1093
+[k] + [en ] -> [ken ] as 1094
+[s] + [or] -> [sor] as 1095
+[
+] + [Y] -> [
+Y] as 1096
+[sti] + [ll ] -> [still ] as 1097
+[h] + [y] -> [hy] as 1098
+[mai] + [d] -> [maid] as 1099
+[o] + [se ] -> [ose ] as 1100
+[k] + [i] -> [ki] as 1101
+[O] + [ ] -> [O ] as 1102
+[:] + [ ] -> [: ] as 1103
+[e ] + [the ] -> [e the ] as 1104
+[know] + [
+] -> [know
+] as 1105
+[c] + [ol] -> [col] as 1106
+[as ] + [the ] -> [as the ] as 1107
+[ta] + [in ] -> [tain ] as 1108
+[hi] + [ll] -> [hill] as 1109
+[,
+] + [F] -> [,
+F] as 1110
+[si] + [t ] -> [sit ] as 1111
+[g] + [ent] -> [gent] as 1112
+[pp] + [ed ] -> [pped ] as 1113
+[,
+] + [I ] -> [,
+I ] as 1114
+[h] + [ar] -> [har] as 1115
+[be] + [for] -> [befor] as 1116
+[sai] + [d, ] -> [said, ] as 1117
+[ma] + [y ] -> [may ] as 1118
+[ee] + [p ] -> [eep ] as 1119
+[th] + [y] -> [thy] as 1120
+[ro] + [se ] -> [rose ] as 1121
+[
+] + [With ] -> [
+With ] as 1122
+[d] + [ear ] -> [dear ] as 1123
+[Iri] + [sh ] -> [Irish ] as 1124
+[er] + [ed ] -> [ered ] as 1125
+[O] + [h ] -> [Oh ] as 1126
+[I] + [ve ] -> [Ive ] as 1127
+[hear] + [d ] -> [heard ] as 1128
+[c] + [e, ] -> [ce, ] as 1129
+[K] + [il] -> [Kil] as 1130
+[ther] + [es ] -> [theres ] as 1131
+[Du] + [blin] -> [Dublin] as 1132
+[brid] + [ge ] -> [bridge ] as 1133
+[dd] + [y ] -> [ddy ] as 1134
+[
+Wh] + [ere ] -> [
+Where ] as 1135
+[an] + [n] -> [ann] as 1136
+[F] + [a] -> [Fa] as 1137
+[
+Th] + [ey ] -> [
+They ] as 1138
+[in] + [ce ] -> [ince ] as 1139
+[old ] + [Rosin the Bow] -> [old Rosin the Bow] as 1140
+[to ] + [my ] -> [to my ] as 1141
+[m] + [om] -> [mom] as 1142
+[s] + [si] -> [ssi] as 1143
+[on] + [, ] -> [on, ] as 1144
+[d] + [,
+] -> [d,
+] as 1145
+[.] + [.] -> [..] as 1146
+[ra] + [in] -> [rain] as 1147
+[y] + [on] -> [yon] as 1148
+[.
+] + [When ] -> [.
+When ] as 1149
+[when ] + [I ] -> [when I ] as 1150
+[of ] + [a ] -> [of a ] as 1151
+[d] + [ing ] -> [ding ] as 1152
+[c] + [re] -> [cre] as 1153
+[me ] + [was ] -> [me was ] as 1154
+[ar] + [ound ] -> [around ] as 1155
+[wa] + [it] -> [wait] as 1156
+[Go] + [d ] -> [God ] as 1157
+[and ] + [she ] -> [and she ] as 1158
+[can] + [not ] -> [cannot ] as 1159
+[sa] + [y ] -> [say ] as 1160
+[lov] + [es ] -> [loves ] as 1161
+[frien] + [ds ] -> [friends ] as 1162
+[do] + [es ] -> [does ] as 1163
+[t] + [y] -> [ty] as 1164
+[ch] + [an] -> [chan] as 1165
+[ai] + [l] -> [ail] as 1166
+[cro] + [ss ] -> [cross ] as 1167
+[t] + [ell ] -> [tell ] as 1168
+[in] + [ter] -> [inter] as 1169
+[ing] + [s ] -> [ings ] as 1170
+[ch] + [ing ] -> [ching ] as 1171
+[pr] + [ou] -> [prou] as 1172
+[su] + [re] -> [sure] as 1173
+[h] + [ur] -> [hur] as 1174
+[h] + [op] -> [hop] as 1175
+[a] + [bo] -> [abo] as 1176
+[y ] + [and ] -> [y and ] as 1177
+[u] + [s ] -> [us ] as 1178
+[mor] + [ta] -> [morta] as 1179
+[re] + [l] -> [rel] as 1180
+[d] + [re] -> [dre] as 1181
+[t] + [own ] -> [town ] as 1182
+[sh] + [or] -> [shor] as 1183
+[P] + [a] -> [Pa] as 1184
+[bri] + [ght] -> [bright] as 1185
+[th] + [re] -> [thre] as 1186
+[d] + [ro] -> [dro] as 1187
+[g] + [li] -> [gli] as 1188
+[th] + [ink ] -> [think ] as 1189
+[wa] + [ll] -> [wall] as 1190
+[bl] + [u] -> [blu] as 1191
+[pa] + [in] -> [pain] as 1192
+[t] + [or] -> [tor] as 1193
+[lea] + [ve ] -> [leave ] as 1194
+[mon] + [ey ] -> [money ] as 1195
+[su] + [n ] -> [sun ] as 1196
+[. ] + [S] -> [. S] as 1197
+[whi] + [le ] -> [while ] as 1198
+[a] + [pp] -> [app] as 1199
+[s] + [ure ] -> [sure ] as 1200
+[h] + [o] -> [ho] as 1201
+[
+O] + [h ] -> [
+Oh ] as 1202
+[on] + [es ] -> [ones ] as 1203
+[J] + [ust ] -> [Just ] as 1204
+[wi] + [sh ] -> [wish ] as 1205
+[
+And ] + [I ] -> [
+And I ] as 1206
+[John] + [ny ] -> [Johnny ] as 1207
+[for ] + [to ] -> [for to ] as 1208
+[m] + [et ] -> [met ] as 1209
+[
+S] + [o ] -> [
+So ] as 1210
+[w] + [on] -> [won] as 1211
+[bri] + [ght ] -> [bright ] as 1212
+[over] + [ the ] -> [over the ] as 1213
+[tim] + [es ] -> [times ] as 1214
+[old ] + [and ] -> [old and ] as 1215
+[ti] + [ll ] -> [till ] as 1216
+[l] + [ar] -> [lar] as 1217
+[E] + [r] -> [Er] as 1218
+[i] + [le] -> [ile] as 1219
+[b] + [b] -> [bb] as 1220
+[Ca] + [se] -> [Case] as 1221
+[mai] + [d ] -> [maid ] as 1222
+[b] + [ow] -> [bow] as 1223
+[ed] + [,
+] -> [ed,
+] as 1224
+[for ] + [a ] -> [for a ] as 1225
+[so] + [on ] -> [soon ] as 1226
+[loo] + [ked ] -> [looked ] as 1227
+[ba] + [ck] -> [back] as 1228
+[an] + [sw] -> [answ] as 1229
+[man] + [y ] -> [many ] as 1230
+[t] + [ro] -> [tro] as 1231
+['] + [t ] -> ['t ] as 1232
+[l] + [s ] -> [ls ] as 1233
+[i] + [m] -> [im] as 1234
+[
+] + [and ] -> [
+and ] as 1235
+[in] + [s ] -> [ins ] as 1236
+[tur] + [n ] -> [turn ] as 1237
+[k ] + [and ] -> [k and ] as 1238
+[ev] + [en] -> [even] as 1239
+[ch] + [ed ] -> [ched ] as 1240
+[wa] + [l] -> [wal] as 1241
+[wat] + [er ] -> [water ] as 1242
+[f] + [ing] -> [fing] as 1243
+[i] + [f] -> [if] as 1244
+[me] + [an] -> [mean] as 1245
+[s] + [ed ] -> [sed ] as 1246
+[d] + [y] -> [dy] as 1247
+[g] + [l] -> [gl] as 1248
+[all] + [ow] -> [allow] as 1249
+[, ] + [a ] -> [, a ] as 1250
+[co] + [ll] -> [coll] as 1251
+[s] + [ol] -> [sol] as 1252
+[wa] + [ys ] -> [ways ] as 1253
+[can ] + [be ] -> [can be ] as 1254
+[be] + [ing ] -> [being ] as 1255
+[f] + [ra] -> [fra] as 1256
+[r] + [ai] -> [rai] as 1257
+[t] + [in] -> [tin] as 1258
+[gre] + [at ] -> [great ] as 1259
+[s] + [ound ] -> [sound ] as 1260
+[e ] + [on the ] -> [e on the ] as 1261
+[
+Th] + [ere ] -> [
+There ] as 1262
+[tra] + [v] -> [trav] as 1263
+[f] + [ar ] -> [far ] as 1264
+[
+Th] + [en ] -> [
+Then ] as 1265
+[it ] + [was ] -> [it was ] as 1266
+[w] + [ear] -> [wear] as 1267
+[d, ] + [and ] -> [d, and ] as 1268
+[r] + [hy] -> [rhy] as 1269
+[Wh] + [at ] -> [What ] as 1270
+[en] + [s ] -> [ens ] as 1271
+[th] + [ose ] -> [those ] as 1272
+[happ] + [y ] -> [happy ] as 1273
+[w] + [ee] -> [wee] as 1274
+[out ] + [of ] -> [out of ] as 1275
+[w] + [ell] -> [well] as 1276
+[S] + [ig] -> [Sig] as 1277
+[Sig] + [nor] -> [Signor] as 1278
+[se] + [en] -> [seen] as 1279
+[�] + [�] -> [ ] as 1280
+[gir] + [l ] -> [girl ] as 1281
+[t] + [ry ] -> [try ] as 1282
+[on] + [e, ] -> [one, ] as 1283
+[f] + [all] -> [fall] as 1284
+[g] + [un] -> [gun] as 1285
+[si] + [d] -> [sid] as 1286
+[h] + [or] -> [hor] as 1287
+[da] + [ught] -> [daught] as 1288
+[-] + [loo] -> [-loo] as 1289
+[,
+] + [But ] -> [,
+But ] as 1290
+[,
+S] + [he ] -> [,
+She ] as 1291
+[a] + [sk] -> [ask] as 1292
+[gri] + [e] -> [grie] as 1293
+[y ] + [the ] -> [y the ] as 1294
+[inter] + [est ] -> [interest ] as 1295
+[I want to ] + [know
+] -> [I want to know
+] as 1296
+[y] + [ing ] -> [ying ] as 1297
+[la] + [st ] -> [last ] as 1298
+[se] + [, ] -> [se, ] as 1299
+[f] + [t] -> [ft] as 1300
+[ong] + [ the ] -> [ong the ] as 1301
+[sp] + [ring] -> [spring] as 1302
+[ll] + [y ] -> [lly ] as 1303
+[to ] + [me ] -> [to me ] as 1304
+[, ] + [my ] -> [, my ] as 1305
+[l] + [ing] -> [ling] as 1306
+[shi] + [p ] -> [ship ] as 1307
+[no ] + [mor] -> [no mor] as 1308
+[th] + [ats ] -> [thats ] as 1309
+[
+S] + [ay] -> [
+Say] as 1310
+[dr] + [ink ] -> [drink ] as 1311
+[E] + [n] -> [En] as 1312
+[i] + [l ] -> [il ] as 1313
+[.
+] + [F] -> [.
+F] as 1314
+[g] + [one ] -> [gone ] as 1315
+[h] + [air] -> [hair] as 1316
+[w] + [ri] -> [wri] as 1317
+[la] + [tion] -> [lation] as 1318
+[f] + [ell] -> [fell] as 1319
+[ti] + [l ] -> [til ] as 1320
+[you] + [ll ] -> [youll ] as 1321
+[bar] + [le] -> [barle] as 1322
+[road ] + [to ] -> [road to ] as 1323
+[rock] + [y ] -> [rocky ] as 1324
+[k] + [in] -> [kin] as 1325
+[bridge ] + [of ] -> [bridge of ] as 1326
+[I ] + [will ] -> [I will ] as 1327
+[B] + [o] -> [Bo] as 1328
+[sw] + [or] -> [swor] as 1329
+[ver] + [, ] -> [ver, ] as 1330
+[w] + [ent ] -> [went ] as 1331
+[gi] + [ve ] -> [give ] as 1332
+[v] + [e, ] -> [ve, ] as 1333
+[L] + [an] -> [Lan] as 1334
+[Lan] + [ig] -> [Lanig] as 1335
+[mer] + [ry ] -> [merry ] as 1336
+[Mar] + [y, ] -> [Mary, ] as 1337
+[Cor] + [por] -> [Corpor] as 1338
+[Corpor] + [al ] -> [Corporal ] as 1339
+[Corporal ] + [Case] -> [Corporal Case] as 1340
+[t] + [ay] -> [tay] as 1341
+[.
+Th] + [ey ] -> [.
+They ] as 1342
+[.
+I] + [t ] -> [.
+It ] as 1343
+[sel] + [f] -> [self] as 1344
+[s] + [at ] -> [sat ] as 1345
+[as ] + [a ] -> [as a ] as 1346
+[m] + [ea] -> [mea] as 1347
+[e.
+] + [I] -> [e.
+I] as 1348
+[sa] + [me ] -> [same ] as 1349
+[si] + [de ] -> [side ] as 1350
+[wor] + [ds ] -> [words ] as 1351
+[.
+] + [But ] -> [.
+But ] as 1352
+[s] + [now] -> [snow] as 1353
+[on] + [d] -> [ond] as 1354
+[c] + [rea] -> [crea] as 1355
+[h] + [om] -> [hom] as 1356
+[tw] + [o ] -> [two ] as 1357
+[s] + [e
+] -> [se
+] as 1358
+[i] + [ther ] -> [ither ] as 1359
+[st] + [rea] -> [strea] as 1360
+[blo] + [om] -> [bloom] as 1361
+[o] + [t ] -> [ot ] as 1362
+[k] + [e] -> [ke] as 1363
+[su] + [ch ] -> [such ] as 1364
+[H] + [er ] -> [Her ] as 1365
+[p] + [ea] -> [pea] as 1366
+[fa] + [ce ] -> [face ] as 1367
+[o] + [ther] -> [other] as 1368
+[
+N] + [o ] -> [
+No ] as 1369
+[en] + [ce ] -> [ence ] as 1370
+[is ] + [not ] -> [is not ] as 1371
+[u] + [t] -> [ut] as 1372
+[b] + [le ] -> [ble ] as 1373
+[cross ] + [the ] -> [cross the ] as 1374
+[a] + [c] -> [ac] as 1375
+[t] + [wi] -> [twi] as 1376
+[ma] + [in] -> [main] as 1377
+[L] + [o] -> [Lo] as 1378
+[t] + [ow] -> [tow] as 1379
+[st] + [, ] -> [st, ] as 1380
+[voi] + [ce ] -> [voice ] as 1381
+[s] + [
+S] -> [s
+S] as 1382
+[tt] + [er ] -> [tter ] as 1383
+[h] + [and ] -> [hand ] as 1384
+[sti] + [ll] -> [still] as 1385
+[.
+] + [M] -> [.
+M] as 1386
+[ca] + [u] -> [cau] as 1387
+[prou] + [d ] -> [proud ] as 1388
+[s] + [ing ] -> [sing ] as 1389
+[c] + [ru] -> [cru] as 1390
+[b] + [le] -> [ble] as 1391
+[e ] + [and ] -> [e and ] as 1392
+[s ] + [in the ] -> [s in the ] as 1393
+[b] + [er] -> [ber] as 1394
+[I ] + [could ] -> [I could ] as 1395
+[B] + [e] -> [Be] as 1396
+[H] + [a] -> [Ha] as 1397
+[bo] + [th ] -> [both ] as 1398
+[t ] + [the ] -> [t the ] as 1399
+[of] + [t ] -> [oft ] as 1400
+[th] + [ the ] -> [th the ] as 1401
+[s] + [ong] -> [song] as 1402
+[e] + [t, ] -> [et, ] as 1403
+[lov] + [e, ] -> [love, ] as 1404
+[b] + [ur] -> [bur] as 1405
+[im] + [morta] -> [immorta] as 1406
+[fi] + [re] -> [fire] as 1407
+[wa] + [ter] -> [water] as 1408
+[th] + [ee] -> [thee] as 1409
+[bla] + [ck ] -> [black ] as 1410
+[arm] + [s ] -> [arms ] as 1411
+[beautiful ] + [Signor] -> [beautiful Signor] as 1412
+[beautiful Signor] + [
+] -> [beautiful Signor
+] as 1413
+[d ] + [of ] -> [d of ] as 1414
+[me ] + [with ] -> [me with ] as 1415
+[and ] + [re] -> [and re] as 1416
+[year] + [s ] -> [years ] as 1417
+[To ] + [the ] -> [To the ] as 1418
+[mar] + [ri] -> [marri] as 1419
+[ri] + [v] -> [riv] as 1420
+[mo] + [st ] -> [most ] as 1421
+[ag] + [e, ] -> [age, ] as 1422
+[l] + [or] -> [lor] as 1423
+[thou] + [ght ] -> [thought ] as 1424
+[W] + [e ] -> [We ] as 1425
+[smi] + [le] -> [smile] as 1426
+[st] + [ea] -> [stea] as 1427
+[di] + [d] -> [did] as 1428
+[D] + [i] -> [Di] as 1429
+[a] + [u] -> [au] as 1430
+[does] + [n] -> [doesn] as 1431
+[interest ] + [me
+] -> [interest me
+] as 1432
+[gent] + [le ] -> [gentle ] as 1433
+[l] + [in] -> [lin] as 1434
+[s] + [s, ] -> [ss, ] as 1435
+[p] + [ra] -> [pra] as 1436
+[and ] + [my ] -> [and my ] as 1437
+[a] + [y ] -> [ay ] as 1438
+[y] + [
+And ] -> [y
+And ] as 1439
+[de] + [light ] -> [delight ] as 1440
+[po] + [or ] -> [poor ] as 1441
+[pla] + [ce ] -> [place ] as 1442
+[I] + [d ] -> [Id ] as 1443
+[an] + [y ] -> [any ] as 1444
+[-ra] + [-loo] -> [-ra-loo] as 1445
+[d] + [ont ] -> [dont ] as 1446
+[y.
+] + [O] -> [y.
+O] as 1447
+[a] + [-] -> [a-] as 1448
+[prett] + [y ] -> [pretty ] as 1449
+[.
+S] + [he ] -> [.
+She ] as 1450
+[l] + [ai] -> [lai] as 1451
+[.
+O] + [h ] -> [.
+Oh ] as 1452
+[da] + [w] -> [daw] as 1453
+[man] + [s ] -> [mans ] as 1454
+[j] + [u] -> [ju] as 1455
+[won] + [der] -> [wonder] as 1456
+[dar] + [l] -> [darl] as 1457
+[mee] + [t ] -> [meet ] as 1458
+[Ball] + [y] -> [Bally] as 1459
+[la] + [ught] -> [laught] as 1460
+[on ] + [my ] -> [on my ] as 1461
+[ear] + [ly ] -> [early ] as 1462
+[loo] + [k ] -> [look ] as 1463
+[bra] + [ve ] -> [brave ] as 1464
+[Fa] + [ther ] -> [Father ] as 1465
+[fiel] + [ds ] -> [fields ] as 1466
+[bir] + [ds ] -> [birds ] as 1467
+[on ] + [your ] -> [on your ] as 1468
+[s ] + [I was ] -> [s I was ] as 1469
+[Lanig] + [ans ] -> [Lanigans ] as 1470
+[Lanigans ] + [Ball] -> [Lanigans Ball] as 1471
+[le] + [y ] -> [ley ] as 1472
+[go] + [es to ] -> [goes to ] as 1473
+[bridge of ] + [To] -> [bridge of To] as 1474
+[bridge of To] + [ome ] -> [bridge of Toome ] as 1475
+[bridge of Toome ] + [today] -> [bridge of Toome today] as 1476
+[thou ] + [my ] -> [thou my ] as 1477
+[Mar] + [y ] -> [Mary ] as 1478
+[b] + [, ] -> [b, ] as 1479
+[me ] + [and ] -> [me and ] as 1480
+[ang] + [ing ] -> [anging ] as 1481
+[f] + [arm] -> [farm] as 1482
+[t] + [ell] -> [tell] as 1483
+[ev] + [er, ] -> [ever, ] as 1484
+[ev] + [en ] -> [even ] as 1485
+[fi] + [ll] -> [fill] as 1486
+[l] + [y, ] -> [ly, ] as 1487
+[u] + [l] -> [ul] as 1488
+[v] + [en] -> [ven] as 1489
+[e] + [c] -> [ec] as 1490
+[all ] + [my ] -> [all my ] as 1491
+[young ] + [and ] -> [young and ] as 1492
+[le ] + [and ] -> [le and ] as 1493
+[r] + [un] -> [run] as 1494
+[i] + [me was ] -> [ime was ] as 1495
+[ime was ] + [away ] -> [ime was away ] as 1496
+[ome] + [where ] -> [omewhere ] as 1497
+[s] + [
+And ] -> [s
+And ] as 1498
+[pe] + [op] -> [peop] as 1499
+[they ] + [were ] -> [they were ] as 1500
+[th] + [ough ] -> [though ] as 1501
+[,
+A] + [ ] -> [,
+A ] as 1502
+[e, ] + [the ] -> [e, the ] as 1503
+[th] + [es] -> [thes] as 1504
+[st] + [oo] -> [stoo] as 1505
+[no ] + [long] -> [no long] as 1506
+[no long] + [er ] -> [no longer ] as 1507
+[ro] + [om ] -> [room ] as 1508
+[h] + [ere ] -> [here ] as 1509
+[cr] + [y] -> [cry] as 1510
+[p] + [ro] -> [pro] as 1511
+[es ] + [are ] -> [es are ] as 1512
+[are ] + [not ] -> [are not ] as 1513
+[st] + [ra] -> [stra] as 1514
+[t] + [en] -> [ten] as 1515
+[es] + [s ] -> [ess ] as 1516
+[ch] + [o] -> [cho] as 1517
+[vi] + [si] -> [visi] as 1518
+[N] + [ow ] -> [Now ] as 1519
+[
+O] + [f ] -> [
+Of ] as 1520
+[i] + [sh] -> [ish] as 1521
+[
+I] + [f ] -> [
+If ] as 1522
+[beg] + [an ] -> [began ] as 1523
+[f] + [ur] -> [fur] as 1524
+[ever] + [y ] -> [every ] as 1525
+[w] + [o] -> [wo] as 1526
+[c] + [e,
+] -> [ce,
+] as 1527
+[al] + [ways ] -> [always ] as 1528
+[st] + [ri] -> [stri] as 1529
+[a] + [ch] -> [ach] as 1530
+[o] + [, ] -> [o, ] as 1531
+[hi] + [m] -> [him] as 1532
+[f] + [l] -> [fl] as 1533
+[the] + [m] -> [them] as 1534
+[I ] + [am ] -> [I am ] as 1535
+[that ] + [I ] -> [that I ] as 1536
+[,
+] + [R] -> [,
+R] as 1537
+[con] + [sci] -> [consci] as 1538
+[ou] + [s of ] -> [ous of ] as 1539
+[be] + [yon] -> [beyon] as 1540
+[er ] + [than ] -> [er than ] as 1541
+[th] + [ink] -> [think] as 1542
+[the ] + [pip] -> [the pip] as 1543
+[n] + [es] -> [nes] as 1544
+[k] + [ the ] -> [k the ] as 1545
+[lea] + [ves ] -> [leaves ] as 1546
+[y,
+] + [And ] -> [y,
+And ] as 1547
+[Th] + [ou ] -> [Thou ] as 1548
+[’] + [d ] -> [’d ] as 1549
+[e ] + [to the ] -> [e to the ] as 1550
+[spi] + [ri] -> [spiri] as 1551
+[t] + [ti] -> [tti] as 1552
+[k] + [, ] -> [k, ] as 1553
+[ar] + [t ] -> [art ] as 1554
+[immorta] + [l ] -> [immortal ] as 1555
+[f] + [ear] -> [fear] as 1556
+[s] + [y] -> [sy] as 1557
+[ey] + [es] -> [eyes] as 1558
+[an] + [d, ] -> [and, ] as 1559
+[ar] + [t] -> [art] as 1560
+[L] + [a] -> [La] as 1561
+[you ] + [are ] -> [you are ] as 1562
+[ed] + [d] -> [edd] as 1563
+[:] + [
+] -> [:
+] as 1564
+[fee] + [t ] -> [feet ] as 1565
+[k] + [eep] -> [keep] as 1566
+[o] + [ver ] -> [over ] as 1567
+[col] + [or ] -> [color ] as 1568
+[c] + [old ] -> [cold ] as 1569
+[de] + [light] -> [delight] as 1570
+[l] + [ou] -> [lou] as 1571
+[u] + [re] -> [ure] as 1572
+[sa] + [w] -> [saw] as 1573
+[h] + [ou] -> [hou] as 1574
+[i] + [de ] -> [ide ] as 1575
+[h] + [on] -> [hon] as 1576
+[t] + [rea] -> [trea] as 1577
+[shin] + [e ] -> [shine ] as 1578
+[doesn] + ['t ] -> [doesn't ] as 1579
+[doesn't ] + [interest me
+] -> [doesn't interest me
+] as 1580
+[I want to know
+] + [if you ] -> [I want to know
+if you ] as 1581
+[a] + [liv] -> [aliv] as 1582
+[with] + [out ] -> [without ] as 1583
+[a] + [tion] -> [ation] as 1584
+[awa] + [y.
+] -> [away.
+] as 1585
+[ra] + [ge ] -> [rage ] as 1586
+[ri] + [ght] -> [right] as 1587
+[si] + [ght] -> [sight] as 1588
+[z] + [e ] -> [ze ] as 1589
+[wh] + [en the ] -> [when the ] as 1590
+[b] + [oo] -> [boo] as 1591
+[in] + [n] -> [inn] as 1592
+[qu] + [ite ] -> [quite ] as 1593
+[mo] + [ther] -> [mother] as 1594
+[with ] + [my ] -> [with my ] as 1595
+[I ] + [re] -> [I re] as 1596
+[like ] + [the ] -> [like the ] as 1597
+[do] + [or] -> [door] as 1598
+[s] + [y ] -> [sy ] as 1599
+[mb] + [er ] -> [mber ] as 1600
+[i] + [le ] -> [ile ] as 1601
+[of] + [f ] -> [off ] as 1602
+[gr] + [an] -> [gran] as 1603
+[ce ] + [and ] -> [ce and ] as 1604
+[tun] + [e ] -> [tune ] as 1605
+[f] + [ou] -> [fou] as 1606
+[str] + [ang] -> [strang] as 1607
+[ne] + [x] -> [nex] as 1608
+[nex] + [t ] -> [next ] as 1609
+[ar] + [ne] -> [arne] as 1610
+[a] + [go] -> [ago] as 1611
+[s] + [an] -> [san] as 1612
+[to ] + [me
+] -> [to me
+] as 1613
+[th] + [en] -> [then] as 1614
+[you ] + [come ] -> [you come ] as 1615
+[ab] + [le] -> [able] as 1616
+[.
+Th] + [en ] -> [.
+Then ] as 1617
+[you] + [re ] -> [youre ] as 1618
+[com] + [ra] -> [comra] as 1619
+[comra] + [des ] -> [comrades ] as 1620
+[c] + [li] -> [cli] as 1621
+[ban] + [ks ] -> [banks ] as 1622
+[n] + [y, ] -> [ny, ] as 1623
+[true ] + [love ] -> [true love ] as 1624
+[,
+] + [The ] -> [,
+The ] as 1625
+[.
+I ] + [love ] -> [.
+I love ] as 1626
+[gre] + [en] -> [green] as 1627
+[sp] + [ent ] -> [spent ] as 1628
+[f] + [ar] -> [far] as 1629
+[whi] + [sk] -> [whisk] as 1630
+[vall] + [ey] -> [valley] as 1631
+[of] + [t] -> [oft] as 1632
+[day] + [s ] -> [days ] as 1633
+[D] + [one] -> [Done] as 1634
+[rom] + [ the ] -> [rom the ] as 1635
+[sum] + [m] -> [summ] as 1636
+[was ] + [the ] -> [was the ] as 1637
+[Bally] + [j] -> [Ballyj] as 1638
+[Ballyj] + [am] -> [Ballyjam] as 1639
+[Ballyjam] + [es] -> [Ballyjames] as 1640
+[Ballyjames] + [du] -> [Ballyjamesdu] as 1641
+[Ballyjamesdu] + [ff] -> [Ballyjamesduff] as 1642
+[wi] + [d ] -> [wid ] as 1643
+[bo] + [ys ] -> [boys ] as 1644
+[.
+I] + [ve ] -> [.
+Ive ] as 1645
+[rom] + [ ] -> [rom ] as 1646
+[f] + [ound ] -> [found ] as 1647
+[m] + [oun] -> [moun] as 1648
+[ch] + [ee] -> [chee] as 1649
+[Er] + [in ] -> [Erin ] as 1650
+[Erin ] + [G] -> [Erin G] as 1651
+[Erin G] + [o ] -> [Erin Go ] as 1652
+[Erin Go ] + [B] -> [Erin Go B] as 1653
+[Erin Go B] + [ra] -> [Erin Go Bra] as 1654
+[Erin Go Bra] + [gh] -> [Erin Go Bragh] as 1655
+[ra] + [w] -> [raw] as 1656
+[old ] + [wom] -> [old wom] as 1657
+[did ] + [say] -> [did say] as 1658
+[one ] + [of ] -> [one of ] as 1659
+[e] + [er ] -> [eer ] as 1660
+[, ] + [but ] -> [, but ] as 1661
+[la] + [u] -> [lau] as 1662
+[
+] + [R] -> [
+R] as 1663
+[P] + [e] -> [Pe] as 1664
+[ce] + [i] -> [cei] as 1665
+[
+Th] + [eres ] -> [
+Theres ] as 1666
+[young ] + [Ro] -> [young Ro] as 1667
+[ddy ] + [Mc] -> [ddy Mc] as 1668
+[ddy Mc] + [Cor] -> [ddy McCor] as 1669
+[ddy McCor] + [ley ] -> [ddy McCorley ] as 1670
+[ddy McCorley ] + [goes to ] -> [ddy McCorley goes to ] as 1671
+[ddy McCorley goes to ] + [di] -> [ddy McCorley goes to di] as 1672
+[ddy McCorley goes to di] + [e on the ] -> [ddy McCorley goes to die on the ] as 1673
+[ddy McCorley goes to die on the ] + [bridge of Toome today] -> [ddy McCorley goes to die on the bridge of Toome today] as 1674
+[
+Th] + [ou ] -> [
+Thou ] as 1675
+[C] + [oun] -> [Coun] as 1676
+[M] + [allow] -> [Mallow] as 1677
+[..] + [. ] -> [... ] as 1678
+[. ] + [. ] -> [. . ] as 1679
+[, ] + [
+] -> [, 
+] as 1680
+[sai] + [d
+] -> [said
+] as 1681
+[th] + [
+] -> [th
+] as 1682
+[in] + [e ] -> [ine ] as 1683
+[mea] + [dow] -> [meadow] as 1684
+[m] + [ent] -> [ment] as 1685
+[stor] + [i] -> [stori] as 1686
+[ab] + [out ] -> [about ] as 1687
+[d] + [on] -> [don] as 1688
+[s] + [ur] -> [sur] as 1689
+[gr] + [and] -> [grand] as 1690
+[z] + [en ] -> [zen ] as 1691
+[be] + [tw] -> [betw] as 1692
+[tu] + [re] -> [ture] as 1693
+[,
+] + [the ] -> [,
+the ] as 1694
+[to] + [ge] -> [toge] as 1695
+[t] + [ure ] -> [ture ] as 1696
+[j] + [ust ] -> [just ] as 1697
+[us] + [ed to ] -> [used to ] as 1698
+[ke ] + [the ] -> [ke the ] as 1699
+[tt] + [le] -> [ttle] as 1700
+[ri] + [ch ] -> [rich ] as 1701
+[t] + [s] -> [ts] as 1702
+[peop] + [le ] -> [people ] as 1703
+[st] + [o] -> [sto] as 1704
+[strea] + [m] -> [stream] as 1705
+[thr] + [ough ] -> [through ] as 1706
+[be] + [ll ] -> [bell ] as 1707
+[sil] + [ent ] -> [silent ] as 1708
+[i] + [se] -> [ise] as 1709
+[el] + [s ] -> [els ] as 1710
+[cro] + [ss] -> [cross] as 1711
+[mi] + [le] -> [mile] as 1712
+[ck] + [ed ] -> [cked ] as 1713
+[aga] + [in ] -> [again ] as 1714
+[pr] + [ai] -> [prai] as 1715
+[p] + [h] -> [ph] as 1716
+[or] + [ld ] -> [orld ] as 1717
+[la] + [ck ] -> [lack ] as 1718
+[th ] + [and ] -> [th and ] as 1719
+[v] + [e] -> [ve] as 1720
+[fi] + [ght] -> [fight] as 1721
+[all ] + [your ] -> [all your ] as 1722
+[roa] + [ds ] -> [roads ] as 1723
+[at ] + [all] -> [at all] as 1724
+[no] + [thing ] -> [nothing ] as 1725
+[that ] + [we ] -> [that we ] as 1726
+[la] + [st] -> [last] as 1727
+[s] + [al] -> [sal] as 1728
+[
+D] + [i] -> [
+Di] as 1729
+[st] + [u] -> [stu] as 1730
+[di] + [st] -> [dist] as 1731
+[li] + [e] -> [lie] as 1732
+[al] + [ong ] -> [along ] as 1733
+[along ] + [with ] -> [along with ] as 1734
+[er] + [r] -> [err] as 1735
+[cle] + [ar] -> [clear] as 1736
+[son] + [s ] -> [sons ] as 1737
+[,
+Th] + [at ] -> [,
+That ] as 1738
+[s] + [ome] -> [some] as 1739
+[sel] + [f ] -> [self ] as 1740
+[.
+] + [W] -> [.
+W] as 1741
+[fu] + [ll ] -> [full ] as 1742
+[a] + [cross the ] -> [across the ] as 1743
+[l ] + [F] -> [l F] as 1744
+[r] + [ing ] -> [ring ] as 1745
+[c] + [tion] -> [ction] as 1746
+[and ] + [I] -> [and I] as 1747
+[se ] + [the ] -> [se the ] as 1748
+[n] + [ly ] -> [nly ] as 1749
+[p] + [s ] -> [ps ] as 1750
+[have ] + [be] -> [have be] as 1751
+[he ] + [was ] -> [he was ] as 1752
+[
+I] + [n ] -> [
+In ] as 1753
+[, ] + [to ] -> [, to ] as 1754
+[sure] + [ly ] -> [surely ] as 1755
+[le] + [d
+] -> [led
+] as 1756
+[y] + [s] -> [ys] as 1757
+[p] + [ow] -> [pow] as 1758
+[h] + [our] -> [hour] as 1759
+[d] + [ow ] -> [dow ] as 1760
+[ee] + [l ] -> [eel ] as 1761
+[fir] + [e ] -> [fire ] as 1762
+[gla] + [ss ] -> [glass ] as 1763
+[g] + [ed ] -> [ged ] as 1764
+[be] + [tter ] -> [better ] as 1765
+[e,
+] + [And ] -> [e,
+And ] as 1766
+[.
+O] + [h, ] -> [.
+Oh, ] as 1767
+[an] + [other ] -> [another ] as 1768
+[si] + [gh] -> [sigh] as 1769
+[le] + [g] -> [leg] as 1770
+[sha] + [p] -> [shap] as 1771
+[e
+O] + [f ] -> [e
+Of ] as 1772
+[e] + [mp] -> [emp] as 1773
+[?] + [
+What ] -> [?
+What ] as 1774
+[es ] + [of ] -> [es of ] as 1775
+[b] + [en] -> [ben] as 1776
+[ea] + [th the ] -> [eath the ] as 1777
+[,
+] + [For ] -> [,
+For ] as 1778
+[e] + [u] -> [eu] as 1779
+[ne] + [w] -> [new] as 1780
+[lov] + [e] -> [love] as 1781
+[war] + [m ] -> [warm ] as 1782
+[e,
+] + [Th] -> [e,
+Th] as 1783
+[hi] + [gh] -> [high] as 1784
+[sor] + [row] -> [sorrow] as 1785
+[i] + [es] -> [ies] as 1786
+[se] + [a ] -> [sea ] as 1787
+[c] + [it] -> [cit] as 1788
+[f] + [ol] -> [fol] as 1789
+[t] + [ea] -> [tea] as 1790
+[?] + [
+Wh] -> [?
+Wh] as 1791
+[sh] + [ou] -> [shou] as 1792
+[
+Wh] + [en the ] -> [
+When the ] as 1793
+[star] + [s ] -> [stars ] as 1794
+[smi] + [le ] -> [smile ] as 1795
+[se ] + [of ] -> [se of ] as 1796
+[ ] + [ ] -> [  ] as 1797
+[ab] + [le ] -> [able ] as 1798
+[
+] + [beautiful Signor
+] -> [
+beautiful Signor
+] as 1799
+[mom] + [ent ] -> [moment ] as 1800
+[w] + [and] -> [wand] as 1801
+[you] + [r] -> [your] as 1802
+[ep] + [t ] -> [ept ] as 1803
+[.
+I] + [n the ] -> [.
+In the ] as 1804
+[pre] + [ci] -> [preci] as 1805
+[I w] + [ould ] -> [I would ] as 1806
+[,
+O] + [r ] -> [,
+Or ] as 1807
+[e.
+] + [A] -> [e.
+A] as 1808
+[ar] + [d ] -> [ard ] as 1809
+[like ] + [a ] -> [like a ] as 1810
+[;] + [
+O] -> [;
+O] as 1811
+[tt] + [ers ] -> [tters ] as 1812
+[C] + [ar] -> [Car] as 1813
+[ed ] + [with ] -> [ed with ] as 1814
+[T] + [ill ] -> [Till ] as 1815
+[wh] + [ere] -> [where] as 1816
+[blu] + [e ] -> [blue ] as 1817
+[ha] + [l] -> [hal] as 1818
+[chil] + [dr] -> [childr] as 1819
+[p] + [ure ] -> [pure ] as 1820
+[no] + [t] -> [not] as 1821
+[ard] + [en ] -> [arden ] as 1822
+[sh] + [o] -> [sho] as 1823
+[had ] + [a ] -> [had a ] as 1824
+[daught] + [er ] -> [daughter ] as 1825
+[ed ] + [a ] -> [ed a ] as 1826
+[,
+] + [Wh] -> [,
+Wh] as 1827
+[d] + [er ] -> [der ] as 1828
+[bea] + [m] -> [beam] as 1829
+[w] + [ea] -> [wea] as 1830
+[t ] + [of ] -> [t of ] as 1831
+[le ] + [of ] -> [le of ] as 1832
+[c] + [ant ] -> [cant ] as 1833
+[fa] + [de ] -> [fade ] as 1834
+[f] + [ear ] -> [fear ] as 1835
+[drea] + [m ] -> [dream ] as 1836
+[om] + [, ] -> [om, ] as 1837
+[
+I] + [t ] -> [
+It ] as 1838
+[be] + [tra] -> [betra] as 1839
+[.
+I] + [f ] -> [.
+If ] as 1840
+[c] + [u] -> [cu] as 1841
+[sou] + [l] -> [soul] as 1842
+[th] + [le] -> [thle] as 1843
+[grie] + [f ] -> [grief ] as 1844
+[D] + [o ] -> [Do ] as 1845
+[Do ] + [not ] -> [Do not ] as 1846
+[that ] + [good ] -> [that good ] as 1847
+[G] + [ood ] -> [Good ] as 1848
+[g] + [ay] -> [gay] as 1849
+[.
+] + [R] -> [.
+R] as 1850
+[s] + [li] -> [sli] as 1851
+[flow] + [er ] -> [flower ] as 1852
+[al] + [ong the ] -> [along the ] as 1853
+[f] + [lo] -> [flo] as 1854
+[befor] + [e ] -> [before ] as 1855
+[Mo] + [on] -> [Moon] as 1856
+[di] + [ed ] -> [died ] as 1857
+[in ] + [your ] -> [in your ] as 1858
+[k] + [eep ] -> [keep ] as 1859
+[never ] + [would ] -> [never would ] as 1860
+[st] + [ole ] -> [stole ] as 1861
+[sle] + [ep] -> [sleep] as 1862
+[har] + [p ] -> [harp ] as 1863
+[a] + [la] -> [ala] as 1864
+[lo] + [ver] -> [lover] as 1865
+[p] + [lea] -> [plea] as 1866
+[fri] + [ght] -> [fright] as 1867
+[for] + [tune ] -> [fortune ] as 1868
+[fou] + [ght ] -> [fought ] as 1869
+[e.
+] + [The ] -> [e.
+The ] as 1870
+[d
+And ] + [I ] -> [d
+And I ] as 1871
+[sa] + [w ] -> [saw ] as 1872
+[mo] + [thers ] -> [mothers ] as 1873
+[fa] + [thers ] -> [fathers ] as 1874
+[s] + [ong ] -> [song ] as 1875
+[and ] + [low] -> [and low] as 1876
+[now] + [, ] -> [now, ] as 1877
+[shin] + [ing ] -> [shining ] as 1878
+[took ] + [me ] -> [took me ] as 1879
+[
+And ] + [she ] -> [
+And she ] as 1880
+[Th] + [eres ] -> [Theres ] as 1881
+[lai] + [d ] -> [laid ] as 1882
+[O] + [n the ] -> [On the ] as 1883
+[En] + [gli] -> [Engli] as 1884
+[ev] + [il ] -> [evil ] as 1885
+[e] + [mans ] -> [emans ] as 1886
+[ma] + [kes ] -> [makes ] as 1887
+[banks ] + [of the ] -> [banks of the ] as 1888
+[h] + [ome] -> [home] as 1889
+[will ] + [be ] -> [will be ] as 1890
+[pla] + [y] -> [play] as 1891
+[e] + [w ] -> [ew ] as 1892
+[Y] + [ou] -> [You] as 1893
+[n ] + [a ] -> [n a ] as 1894
+[away ] + [from ] -> [away from ] as 1895
+[ro] + [ll] -> [roll] as 1896
+[s] + [ent] -> [sent] as 1897
+[Y] + [our] -> [Your] as 1898
+[ni] + [e ] -> [nie ] as 1899
+[flow] + [ers ] -> [flowers ] as 1900
+[B] + [ri] -> [Bri] as 1901
+[dar] + [ling ] -> [darling ] as 1902
+[you] + [ve ] -> [youve ] as 1903
+[f] + [er] -> [fer] as 1904
+[dr] + [ink] -> [drink] as 1905
+[ni] + [ce ] -> [nice ] as 1906
+[summ] + [ers ] -> [summers ] as 1907
+[r] + [ough ] -> [rough ] as 1908
+[gra] + [ss ] -> [grass ] as 1909
+[whi] + [sp] -> [whisp] as 1910
+[stre] + [et ] -> [street ] as 1911
+[si] + [e ] -> [sie ] as 1912
+[st] + [ed ] -> [sted ] as 1913
+[never ] + [will ] -> [never will ] as 1914
+[stru] + [ck ] -> [struck ] as 1915
+[N] + [o ] -> [No ] as 1916
+[
+Where ] + [the ] -> [
+Where the ] as 1917
+[C] + [on] -> [Con] as 1918
+[ch] + [arm] -> [charm] as 1919
+[laught] + [er] -> [laughter] as 1920
+[go] + [ld] -> [gold] as 1921
+[gold] + [en ] -> [golden ] as 1922
+[bl] + [in ] -> [blin ] as 1923
+[kes ] + [of ] -> [kes of ] as 1924
+[S] + [h] -> [Sh] as 1925
+[un] + [g] -> [ung] as 1926
+[moun] + [tain ] -> [mountain ] as 1927
+[dy] + [ing] -> [dying] as 1928
+[Ill ] + [be ] -> [Ill be ] as 1929
+[o] + [h ] -> [oh ] as 1930
+[heard ] + [a ] -> [heard a ] as 1931
+[si] + [r] -> [sir] as 1932
+[bi] + [d ] -> [bid ] as 1933
+[D] + [own ] -> [Down ] as 1934
+[E] + [ile] -> [Eile] as 1935
+[.
+] + [Ill ] -> [.
+Ill ] as 1936
+[G] + [re] -> [Gre] as 1937
+[gi] + [c ] -> [gic ] as 1938
+[I ] + [ha] -> [I ha] as 1939
+[j] + [ew] -> [jew] as 1940
+[give ] + [me ] -> [give me ] as 1941
+[give me ] + [your ] -> [give me your ] as 1942
+[give me your ] + [hand] -> [give me your hand] as 1943
+[that ] + [she ] -> [that she ] as 1944
+[you ] + [were ] -> [you were ] as 1945
+[w] + [el] -> [wel] as 1946
+[w] + [ont ] -> [wont ] as 1947
+[say] + [s ] -> [says ] as 1948
+[on ] + [her ] -> [on her ] as 1949
+[L] + [et ] -> [Let ] as 1950
+[ai] + [l ] -> [ail ] as 1951
+[and ] + [a ] -> [and a ] as 1952
+[dro] + [p ] -> [drop ] as 1953
+[M] + [ountain] -> [Mountain] as 1954
+[pi] + [st] -> [pist] as 1955
+[pist] + [ol] -> [pistol] as 1956
+[, ] + [S] -> [, S] as 1957
+[Mo] + [ll] -> [Moll] as 1958
+[C] + [ol] -> [Col] as 1959
+[Col] + [one] -> [Colone] as 1960
+[on] + [d ] -> [ond ] as 1961
+[t] + [in ] -> [tin ] as 1962
+[C] + [re] -> [Cre] as 1963
+[ask] + [ed ] -> [asked ] as 1964
+[of ] + [A] -> [of A] as 1965
+[sing] + [ing ] -> [singing ] as 1966
+[ste] + [pped ] -> [stepped ] as 1967
+[;] + [
+I ] -> [;
+I ] as 1968
+[s ] + [cr] -> [s cr] as 1969
+[rocky ] + [road to ] -> [rocky road to ] as 1970
+[rocky road to ] + [Dublin] -> [rocky road to Dublin] as 1971
+[s] + [ink] -> [sink] as 1972
+[y.
+] + [S] -> [y.
+S] as 1973
+[I] + [rel] -> [Irel] as 1974
+[be] + [st] -> [best] as 1975
+[cru] + [el ] -> [cruel ] as 1976
+[fri] + [end] -> [friend] as 1977
+[st] + [ar ] -> [star ] as 1978
+[s] + [on ] -> [son ] as 1979
+[S] + [pan] -> [Span] as 1980
+[Span] + [ci] -> [Spanci] as 1981
+[Spanci] + [l ] -> [Spancil ] as 1982
+[Spancil ] + [H] -> [Spancil H] as 1983
+[Coun] + [ty ] -> [County ] as 1984
+[County ] + [D] -> [County D] as 1985
+[County D] + [own] -> [County Down] as 1986
+[whee] + [l ] -> [wheel ] as 1987
+[.
+I love ] + [thee ] -> [.
+I love thee ] as 1988
+[rhy] + [me with ] -> [rhyme with ] as 1989
+[ough] + [, ] -> [ough, ] as 1990
+[tay] + [, I ] -> [tay, I ] as 1991
+[flow] + [er] -> [flower] as 1992
+[mom] + [ent] -> [moment] as 1993
+[vall] + [ey ] -> [valley ] as 1994
+[st] + [on] -> [ston] as 1995
+[E] + [a] -> [Ea] as 1996
+[i] + [s] -> [is] as 1997
+[that ] + [are ] -> [that are ] as 1998
+[me] + [mor] -> [memor] as 1999
+[di] + [ff] -> [diff] as 2000
+[diff] + [er] -> [differ] as 2001
+[differ] + [enc] -> [differenc] as 2002
+[ca] + [p] -> [cap] as 2003
+[st] + [ring] -> [string] as 2004
+[su] + [pp] -> [supp] as 2005
+[d] + [s,
+] -> [ds,
+] as 2006
+[ru] + [m] -> [rum] as 2007
+[ha] + [v] -> [hav] as 2008
+[mu] + [si] -> [musi] as 2009
+[ing] + [s
+] -> [ings
+] as 2010
+[dd] + [en ] -> [dden ] as 2011
+[ga] + [ther] -> [gather] as 2012
+[—] + [
+] -> [—
+] as 2013
+[s] + [la] -> [sla] as 2014
+[ers ] + [and ] -> [ers and ] as 2015
+[i] + [dea] -> [idea] as 2016
+[I ] + [go ] -> [I go ] as 2017
+[m] + [es] -> [mes] as 2018
+[ime was away ] + [and s] -> [ime was away and s] as 2019
+[ime was away and s] + [omewhere ] -> [ime was away and somewhere ] as 2020
+[ime was away and somewhere ] + [el] -> [ime was away and somewhere el] as 2021
+[ime was away and somewhere el] + [se] -> [ime was away and somewhere else] as 2022
+[bo] + [dy ] -> [body ] as 2023
+[did ] + [not ] -> [did not ] as 2024
+[li] + [m] -> [lim] as 2025
+[w] + [e] -> [we] as 2026
+[around ] + [the ] -> [around the ] as 2027
+[out ] + [the ] -> [out the ] as 2028
+[if] + [ the ] -> [if the ] as 2029
+[est] + [s ] -> [ests ] as 2030
+[wh] + [at] -> [what] as 2031
+[ca] + [us] -> [caus] as 2032
+[li] + [e ] -> [lie ] as 2033
+[world ] + [is ] -> [world is ] as 2034
+[en] + [i] -> [eni] as 2035
+[
+] + [P] -> [
+P] as 2036
+[dea] + [th] -> [death] as 2037
+[ent ] + [and ] -> [ent and ] as 2038
+[w] + [ood] -> [wood] as 2039
+[or ] + [of ] -> [or of ] as 2040
+[p] + [le] -> [ple] as 2041
+[e] + [
+A] -> [e
+A] as 2042
+[-] + [white ] -> [-white ] as 2043
+[y ] + [is ] -> [y is ] as 2044
+[u] + [mb] -> [umb] as 2045
+[fa] + [c] -> [fac] as 2046
+[does ] + [not ] -> [does not ] as 2047
+[P] + [o] -> [Po] as 2048
+[en] + [ti] -> [enti] as 2049
+[be] + [lie] -> [belie] as 2050
+[chan] + [ge ] -> [change ] as 2051
+[that ] + [the ] -> [that the ] as 2052
+[N] + [ot ] -> [Not ] as 2053
+[wor] + [ld] -> [world] as 2054
+[s ] + [and the ] -> [s and the ] as 2055
+[ou] + [ght] -> [ought] as 2056
+[time ] + [is ] -> [time is ] as 2057
+[go] + [es ] -> [goes ] as 2058
+[k ] + [of ] -> [k of ] as 2059
+[or ] + [and ] -> [or and ] as 2060
+[at] + [e ] -> [ate ] as 2061
+[f] + [all ] -> [fall ] as 2062
+[.
+] + [Wh] -> [.
+Wh] as 2063
+[A] + [n] -> [An] as 2064
+[al] + [, ] -> [al, ] as 2065
+[ke ] + [a ] -> [ke a ] as 2066
+[cl] + [ai] -> [clai] as 2067
+[O] + [f ] -> [Of ] as 2068
+[mi] + [st] -> [mist] as 2069
+[mu] + [ch ] -> [much ] as 2070
+[on ] + [and ] -> [on and ] as 2071
+[tru] + [ly ] -> [truly ] as 2072
+[th] + [ings ] -> [things ] as 2073
+[bor] + [n ] -> [born ] as 2074
+[our] + [, ] -> [our, ] as 2075
+[t] + [e,
+] -> [te,
+] as 2076
+[go] + [ing ] -> [going ] as 2077
+[abo] + [ve the ] -> [above the ] as 2078
+[par] + [t] -> [part] as 2079
+[b] + [ay] -> [bay] as 2080
+[s] + [now ] -> [snow ] as 2081
+[ros] + [es ] -> [roses ] as 2082
+[ar] + [i] -> [ari] as 2083
+[ou] + [s] -> [ous] as 2084
+[l] + [d
+] -> [ld
+] as 2085
+[
+O] + [n the ] -> [
+On the ] as 2086
+[trav] + [el] -> [travel] as 2087
+[too] + [k the ] -> [took the ] as 2088
+[pa] + [ss] -> [pass] as 2089
+[ther] + [e
+] -> [there
+] as 2090
+[ste] + [p ] -> [step ] as 2091
+[I ] + [k] -> [I k] as 2092
+[I ] + [should ] -> [I should ] as 2093
+[st] + [er] -> [ster] as 2094
+[l] + [ow ] -> [low ] as 2095
+[sweet] + [ly ] -> [sweetly ] as 2096
+[ha] + [un] -> [haun] as 2097
+[me] + [lo] -> [melo] as 2098
+[s] + [oft ] -> [soft ] as 2099
+[pla] + [y ] -> [play ] as 2100
+[spiri] + [t ] -> [spirit ] as 2101
+[ben] + [eath the ] -> [beneath the ] as 2102
+[d] + [e, ] -> [de, ] as 2103
+[Y] + [our ] -> [Your ] as 2104
+[c] + [ri] -> [cri] as 2105
+[t] + [ar] -> [tar] as 2106
+[O] + [r ] -> [Or ] as 2107
+[town] + [, ] -> [town, ] as 2108
+[e] + [ts ] -> [ets ] as 2109
+[des] + [o] -> [deso] as 2110
+[la] + [t] -> [lat] as 2111
+[.
+O] + [ ] -> [.
+O ] as 2112
+[ch] + [es ] -> [ches ] as 2113
+[m] + [, ] -> [m, ] as 2114
+[do] + [st ] -> [dost ] as 2115
+[en] + [er] -> [ener] as 2116
+[B] + [ea] -> [Bea] as 2117
+[,] + [—] -> [,—] as 2118
+[?] + [
+O] -> [?
+O] as 2119
+[?] + [
+And ] -> [?
+And ] as 2120
+[st ] + [the ] -> [st the ] as 2121
+[began ] + [to ] -> [began to ] as 2122
+[bea] + [t] -> [beat] as 2123
+[cha] + [in] -> [chain] as 2124
+[d ] + [he ] -> [d he ] as 2125
+[en] + [ever ] -> [enever ] as 2126
+[win] + [dow] -> [window] as 2127
+[
+] + [the ] -> [
+the ] as 2128
+[b] + [e
+] -> [be
+] as 2129
+[pa] + [per] -> [paper] as 2130
+[tur] + [ning ] -> [turning ] as 2131
+[heav] + [en] -> [heaven] as 2132
+[s] + [se] -> [sse] as 2133
+[that ] + [once ] -> [that once ] as 2134
+[
+A] + [t ] -> [
+At ] as 2135
+[
+S] + [ome ] -> [
+Some ] as 2136
+[a] + [li] -> [ali] as 2137
+[.
+] + [Where ] -> [.
+Where ] as 2138
+[With ] + [a ] -> [With a ] as 2139
+[oo] + [l ] -> [ool ] as 2140
+[
+S] + [u] -> [
+Su] as 2141
+[
+Su] + [ch ] -> [
+Such ] as 2142
+[
+O] + [f] -> [
+Of] as 2143
+[ ] + [ ] -> [  ] as 2144
+[y] + [et ] -> [yet ] as 2145
+[s] + [wi] -> [swi] as 2146
+[e
+I] + [n the ] -> [e
+In the ] as 2147
+[it] + [y,
+] -> [ity,
+] as 2148
+[h] + [anging ] -> [hanging ] as 2149
+[down] + [
+] -> [down
+] as 2150
+[see] + [m] -> [seem] as 2151
+[di] + [ed] -> [died] as 2152
+[s] + [mo] -> [smo] as 2153
+[om] + [
+] -> [om
+] as 2154
+[g] + [ro] -> [gro] as 2155
+[to ] + [re] -> [to re] as 2156
+[s, ] + [and ] -> [s, and ] as 2157
+[hal] + [f ] -> [half ] as 2158
+[;] + [
+And ] -> [;
+And ] as 2159
+[!] + [
+The ] -> [!
+The ] as 2160
+[ure] + [, ] -> [ure, ] as 2161
+[an ] + [old ] -> [an old ] as 2162
+[g] + [arden ] -> [garden ] as 2163
+[stand] + [ing ] -> [standing ] as 2164
+[bu] + [ll] -> [bull] as 2165
+[thou] + [s] -> [thous] as 2166
+[on ] + [a ] -> [on a ] as 2167
+[ut] + [-] -> [ut-] as 2168
+[foo] + [t] -> [foot] as 2169
+[oo] + [l] -> [ool] as 2170
+[in] + [d ] -> [ind ] as 2171
+[di] + [m ] -> [dim ] as 2172
+[wh] + [y ] -> [why ] as 2173
+[.
+It ] + [doesn't interest me
+] -> [.
+It doesn't interest me
+] as 2174
+[your ] + [own ] -> [your own ] as 2175
+[lif] + [e] -> [life] as 2176
+[min] + [e ] -> [mine ] as 2177
+[if you ] + [can ] -> [if you can ] as 2178
+[d] + [ance ] -> [dance ] as 2179
+[fi] + [ll ] -> [fill ] as 2180
+[I want to ] + [know ] -> [I want to know ] as 2181
+[in] + [t ] -> [int ] as 2182
+[an] + [other] -> [another] as 2183
+[k] + [e
+] -> [ke
+] as 2184
+[sil] + [ver ] -> [silver ] as 2185
+[a] + [f] -> [af] as 2186
+[el] + [se ] -> [else ] as 2187
+[al] + [on] -> [alon] as 2188
+[Do not ] + [go ] -> [Do not go ] as 2189
+[Do not go ] + [gentle ] -> [Do not go gentle ] as 2190
+[Do not go gentle ] + [into ] -> [Do not go gentle into ] as 2191
+[Do not go gentle into ] + [that good ] -> [Do not go gentle into that good ] as 2192
+[Do not go gentle into that good ] + [night] -> [Do not go gentle into that good night] as 2193
+[age, ] + [rage ] -> [age, rage ] as 2194
+[age, rage ] + [against ] -> [age, rage against ] as 2195
+[age, rage against ] + [the d] -> [age, rage against the d] as 2196
+[age, rage against the d] + [ying ] -> [age, rage against the dying ] as 2197
+[age, rage against the dying ] + [of the ] -> [age, rage against the dying of the ] as 2198
+[age, rage against the dying of the ] + [light] -> [age, rage against the dying of the light] as 2199
+[se ] + [men ] -> [se men ] as 2200
+[dar] + [k ] -> [dark ] as 2201
+[m] + [en, ] -> [men, ] as 2202
+[danc] + [ed ] -> [danced ] as 2203
+[n] + [, ] -> [n, ] as 2204
+[.
+] + [La] -> [.
+La] as 2205
+[moon] + [
+] -> [moon
+] as 2206
+[s] + [m] -> [sm] as 2207
+[ro] + [ck ] -> [rock ] as 2208
+[in ] + [their ] -> [in their ] as 2209
+[c] + [row] -> [crow] as 2210
+[d] + [ed ] -> [ded ] as 2211
+[si] + [mp] -> [simp] as 2212
+[sh] + [oo] -> [shoo] as 2213
+[ta] + [ken ] -> [taken ] as 2214
+[C] + [ome ] -> [Come ] as 2215
+[thy] + [me
+] -> [thyme
+] as 2216
+[thy] + [me ] -> [thyme ] as 2217
+[ing] + [
+And ] -> [ing
+And ] as 2218
+[ing] + [s to ] -> [ings to ] as 2219
+[never would ] + [de] -> [never would de] as 2220
+[c] + [ay] -> [cay] as 2221
+[
+Wh] + [o ] -> [
+Who ] as 2222
+[awa] + [y] -> [away] as 2223
+[sai] + [l] -> [sail] as 2224
+[ro] + [se] -> [rose] as 2225
+[
+H] + [e ] -> [
+He ] as 2226
+[
+Wh] + [ile ] -> [
+While ] as 2227
+[ing
+] + [C] -> [ing
+C] as 2228
+[war] + [d ] -> [ward ] as 2229
+[for] + [get ] -> [forget ] as 2230
+[coun] + [try ] -> [country ] as 2231
+[sp] + [o] -> [spo] as 2232
+[h] + [ard] -> [hard] as 2233
+[I] + [re] -> [Ire] as 2234
+[u] + [m ] -> [um ] as 2235
+[thre] + [e ] -> [three ] as 2236
+[e
+And ] + [I ] -> [e
+And I ] as 2237
+[K] + [ill] -> [Kill] as 2238
+[Kill] + [arne] -> [Killarne] as 2239
+[I] + [n ] -> [In ] as 2240
+[so ] + [sweet ] -> [so sweet ] as 2241
+[oo] + [-ra-loo] -> [oo-ra-loo] as 2242
+[,
+] + [T] -> [,
+T] as 2243
+[fee] + [l ] -> [feel ] as 2244
+[I ] + [hear ] -> [I hear ] as 2245
+[r] + [y] -> [ry] as 2246
+[
+And ] + [di] -> [
+And di] as 2247
+[.
+S] + [o ] -> [.
+So ] as 2248
+[pl] + [enty ] -> [plenty ] as 2249
+[sol] + [di] -> [soldi] as 2250
+[
+Say] + [ing] -> [
+Saying] as 2251
+[are ] + [you ] -> [are you ] as 2252
+[did] + [nt ] -> [didnt ] as 2253
+[c] + [ur] -> [cur] as 2254
+[Engli] + [sh ] -> [English ] as 2255

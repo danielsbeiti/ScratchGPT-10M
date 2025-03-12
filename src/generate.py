@@ -1,14 +1,17 @@
 import torch
 import os
 import config
-from data import decode
+from bpe import decode_with_bpe
 
-def generate_text(model, itos, max_new_tokens=None):
+
+
+
+def generate_text(model, vocab, max_new_tokens=None):
     """
     Generate text using the model
     Args:
         model: The trained model
-        itos: Index-to-string mapping
+        vocab: Vocabulary for decoding
         max_new_tokens: Maximum number of tokens to generate
     Returns:
         Generated text
@@ -21,10 +24,10 @@ def generate_text(model, itos, max_new_tokens=None):
     context = torch.zeros((1, 1), dtype=torch.long, device=config.device)
     
     # Generate new tokens
-    generated = model.generate(context, max_new_tokens, itos)[0].tolist()
+    generated = model.generate(context, max_new_tokens, vocab)[0].tolist()
     
     # Decode the generated tokens
-    text = decode(generated, itos)
+    text = decode_with_bpe(generated, vocab)
     
     return text
 

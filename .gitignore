@@ -8,3 +8,5 @@ __pycache__/
 featured/loss/
 playground.ipynb
 weights/*.pthplayground.ipynb
+bpe_test.py
+src/__pycache__/

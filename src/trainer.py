@@ -5,6 +5,9 @@ import os
 import config
 from data import get_batch
 
+
+
+
 def estimate_loss(model, train_data, val_data):
     """Estimate loss on train and validation data"""
     out = {}
@@ -19,6 +22,9 @@ def estimate_loss(model, train_data, val_data):
             out[split] = losses.mean().item()
     model.train()
     return out
+
+
+
 
 def train_model(model, optimizer, train_data, val_data, weights_path):
     """Train the model"""
@@ -45,6 +51,7 @@ def train_model(model, optimizer, train_data, val_data, weights_path):
         if iter % config.e == 0 or iter == config.max_iter - 1:
             losses = estimate_loss(model, train_data, val_data)
             print(f'Iter {iter}/{config.max_iter}: train loss {losses["train"]:.4f}, val loss {losses["val"]:.4f}')
+
             loss_tracking['iter'].append(iter)
             loss_tracking['train'].append(losses['train'])
             loss_tracking['val'].append(losses['val'])
@@ -61,6 +68,9 @@ def train_model(model, optimizer, train_data, val_data, weights_path):
     print('Saved loss to loss.csv')
     
     return model
+
+
+
 
 def load_model(model, weights_path):
     """Load a trained model"""
