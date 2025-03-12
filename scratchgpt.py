@@ -49,13 +49,18 @@ with open('media/shakespeare.txt', 'r', encoding='utf-8') as f:
 chars = sorted(list(set(text)))
 vocab_size = len(chars)
 
-# Create a mapping from characters to integers
-stoi = {ch: i for i, ch in enumerate(chars)}
-itos = {i: ch for i, ch in enumerate(chars)}
 
 # Encoder and decoder functions
 def encode(text):
-    return [stoi[c] for c in text]
+    tokens = list(text.encode('utf-8'))
+    while len(tokens) > 1:
+        stats = get_stats(tokens)
+        pair = min(stats, key=lambda x: merges.get(x, float('inf')))
+        if pair not in merges:
+            break
+        idx = merges[pair]
+        tokens = merge_pair(tokens, pair, idx)
+    return tokens
 
 def decode(encoded_text):
     return ''.join([itos[i] for i in encoded_text])
